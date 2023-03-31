@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root {
+    --second-color: #7645d9;
+    --h2-light-color: #280d5f;
+    --button-color: #1fc7d4;
+    --navLink-color: #7a6eaa;
+    --paragraf-color: #7a6eaa;
+    --bannerGrad-top: #8051d6;
+    --bannerGrad-bottom: #492286;
+    --third-color: #ffb237;
+    --fourth-color: #bdc2c4;
+    --h2-dark-color: white;
+}
