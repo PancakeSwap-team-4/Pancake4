@@ -233,7 +233,7 @@ header {
     font-size: 25px;
     font-weight: 500;
 }
-#space-bunny{
+#space-station{
     width: 52%;
     position: absolute;
     top: 0%;
@@ -241,6 +241,14 @@ header {
     transform: translate(0%, 0%);
     object-fit: contain;
     border-radius: 35px;
+}
+#space-bunny{
+    width: 20%;
+    position: absolute;
+    top: -20%;
+    left: 65%;
+    transform: translate(25%, 0%);
+    animation: fluttua 7s ease-in-out infinite;
 }
 
 
