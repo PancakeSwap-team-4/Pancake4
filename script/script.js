@@ -29,17 +29,3 @@ indicators.forEach((indicator, index) => {
     goToSlide(index);
   });
 });
-
-var frameworkAnimation = document.querySelector(".framework-light");
-var isAnimating = true;
-
-function loopAnimation() {
-  if (!isAnimating) {
-    frameworkAnimation.style.animationPlayState = "running";
-    isAnimating = true;
-  } else {
-    frameworkAnimation.style.animationPlayState = "paused";
-    isAnimating = false;
-  }
-}
-const loopInterval = setInterval(loopAnimation, 5000);
