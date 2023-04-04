@@ -56,11 +56,11 @@ header {
   width: 100%;
 }
 .slide3 {
-    background: linear-gradient(
-        114.79deg,
-        rgb(192, 64, 252) -17.76%,
-        rgb(75, 60, 255) 99.88%
-      );
+  background: linear-gradient(
+    114.79deg,
+    rgb(192, 64, 252) -17.76%,
+    rgb(75, 60, 255) 99.88%
+  );
   border-radius: 30px;
   height: 100%;
   width: 100%;
@@ -85,6 +85,9 @@ header {
   height: 100%;
   width: 100%;
 }
+
+/* SLIDE 1*/ 
+
 #bunny-slide1 {
   /* coniglietto blu */
   width: 25%;
@@ -93,7 +96,6 @@ header {
   float: right;
   animation: fluttua 6s ease-in-out infinite;
 }
-
 @keyframes fluttua {
   0% {
     transform: translate(0, 0);
@@ -120,6 +122,7 @@ header {
   transform: translate(-20%, 0%);
   width: 13%;
 }
+
 .framework-container {
   position: absolute;
   top: 50%;
@@ -146,13 +149,11 @@ header {
   animation: fadeInOut 1.4s linear infinite;
   animation-play-state: running;
 }
-
 @keyframes fadeInOut {
   to {
     background-position: -100% 0;
   }
 }
-
 /* animazione compare-scompare */
 #star1,
 #star2 {
@@ -160,7 +161,6 @@ header {
   animation-name: fade-out-in;
   animation-iteration-count: infinite;
 }
-
 @keyframes fade-out-in {
   0% {
     opacity: 1;
@@ -194,7 +194,7 @@ header {
   width: 4.8%;
   animation-duration: 3s;
 }
-
+/* SLIDE 2 */
 .slide .caption {
   position: absolute;
   bottom: 30px;
