@@ -335,17 +335,23 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .indicator {
   width: 25px;
   height: 8px;
-  background-color: rgba(17, 15, 15, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .indicator.active {
   width: 24px;
-  height: 9px;
+  height: 8px;
   background-color: #ffffff;
+}
+.indicator:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.indicator:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
