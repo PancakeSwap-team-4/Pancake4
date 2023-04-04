@@ -33,7 +33,7 @@ header {
   width: 20%;
   height: 100%;
   position: relative;
-  border-radius: 45px;
+  border-radius: 35px;
 }
 .slide1 {
   background: linear-gradient(
@@ -41,7 +41,7 @@ header {
     rgb(192, 64, 252) -17.76%,
     rgb(75, 60, 255) 99.88%
   );
-  border-radius: 45px;
+  border-radius: 35px;
   height: 100%;
   width: 100%;
 }
@@ -51,7 +51,7 @@ header {
     rgb(192, 64, 252) -17.76%,
     rgb(75, 60, 255) 99.88%
   );
-  border-radius: 30px;
+  border-radius: 35px;
   height: 100%;
   width: 100%;
 }
@@ -61,7 +61,7 @@ header {
     rgb(192, 64, 252) -17.76%,
     rgb(75, 60, 255) 99.88%
   );
-  border-radius: 30px;
+  border-radius: 35px;
   height: 100%;
   width: 100%;
 }
@@ -71,7 +71,7 @@ header {
     rgb(192, 64, 252) -17.76%,
     rgb(75, 60, 255) 99.88%
   );
-  border-radius: 30px;
+  border-radius: 35px;
   height: 100%;
   width: 100%;
 }
@@ -81,13 +81,39 @@ header {
     rgb(192, 64, 252) -17.76%,
     rgb(75, 60, 255) 99.88%
   );
-  border-radius: 30px;
+  border-radius: 35px;
   height: 100%;
   width: 100%;
 }
-
+/* GENERAL SETTINGS */
+.slide .caption {
+    position: absolute;
+    bottom: 50px;
+    left: 24%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+  
+#purple-webkit {
+    font-weight: 900;
+    background: linear-gradient(
+      166.02deg,
+      rgb(255, 178, 55) -5.1%,
+      rgb(255, 235, 55) 75.24%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
+}
 /* SLIDE 1*/ 
 
+.slide3 .caption h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+      1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 #bunny-slide1 {
   /* coniglietto blu */
   width: 25%;
@@ -194,35 +220,31 @@ header {
   width: 4.8%;
   animation-duration: 3s;
 }
-/* SLIDE 2 */
-.slide .caption {
-  position: absolute;
-  bottom: 30px;
-  left: 26%;
-  transform: translateX(-50%);
-  color: #fff;
+
+/* SLIDE 2 */ 
+
+.slide1 .caption {
+    margin-bottom: 2.2rem;
 }
-.slide .caption h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
+.slide1 .caption h2{
+    font-size: 40px;
+}
+.slide1 .caption p{
+    font-size: 25px;
+    font-weight: 500;
+}
+#space-bunny{
+    width: 52%;
+    position: absolute;
+    top: 0%;
+    left: 48%;
+    transform: translate(0%, 0%);
+    object-fit: contain;
+    border-radius: 35px;
 }
 
-#purple-webkit {
-  font-size: 26px;
-  font-weight: 900;
-  margin-bottom: 10px;
-  background: linear-gradient(
-    166.02deg,
-    rgb(255, 178, 55) -5.1%,
-    rgb(255, 235, 55) 75.24%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.15rem rgb(101, 50, 205);
-}
+
+/* BUTTONS */
 
 .head-btn {
   background-color: var(--button-color);
@@ -233,6 +255,10 @@ header {
   font-weight: 500;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  transform: translate(-25%, 10%);
 }
 
 .head-btn:hover {
