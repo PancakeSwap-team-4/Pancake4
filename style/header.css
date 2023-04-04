@@ -56,11 +56,11 @@ header {
   width: 100%;
 }
 .slide3 {
-  background: linear-gradient(
-    114.79deg,
-    rgb(192, 64, 252) -17.76%,
-    rgb(75, 60, 255) 99.88%
-  );
+    background: linear-gradient(
+        114.79deg,
+        rgb(192, 64, 252) -17.76%,
+        rgb(75, 60, 255) 99.88%
+      );
   border-radius: 30px;
   height: 100%;
   width: 100%;
@@ -198,7 +198,7 @@ header {
 .slide .caption {
   position: absolute;
   bottom: 30px;
-  left: 25%;
+  left: 26%;
   transform: translateX(-50%);
   color: #fff;
 }
@@ -210,10 +210,10 @@ header {
     1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.slide .caption p {
-  font-size: 25px;
+#purple-webkit {
+  font-size: 26px;
   font-weight: 900;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   background: linear-gradient(
     166.02deg,
     rgb(255, 178, 55) -5.1%,
@@ -221,7 +221,7 @@ header {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.15rem #6532cd;
+  -webkit-text-stroke: 0.15rem rgb(101, 50, 205);
 }
 
 .head-btn {
