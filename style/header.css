@@ -14,7 +14,7 @@ header {
   position: relative;
   width: 78%;
   height: 26vh;
-  overflow: hidden;
+  overflow: visible; /*FIRST OVERFLOW*/
   margin: 0 auto;
 }
 
@@ -105,7 +105,7 @@ header {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
 }
-/* SLIDE 1*/ 
+/* SLIDE 3*/ 
 
 .slide3 .caption h2 {
     font-size: 40px;
@@ -221,7 +221,7 @@ header {
   animation-duration: 3s;
 }
 
-/* SLIDE 2 */ 
+/* SLIDE 1 */ 
 
 .slide1 .caption {
     margin-bottom: 2.2rem;
@@ -251,6 +251,29 @@ header {
     animation: fluttua 7s ease-in-out infinite;
 }
 
+/* SLIDE 2 */
+
+.slide2 .caption {
+    margin-bottom: 2.2rem;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(5%, 0%);
+}
+.slide2 .caption h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.slide2 .caption p{
+    font-size: 20px;
+}
+#slide2-bunny{
+    width: 26%;
+    position: absolute;
+    top: -17%;
+    left: 65%;
+    transform: translate(25%, 0%);
+}
 
 /* BUTTONS */
 
@@ -268,8 +291,21 @@ header {
   left: 5%;
   transform: translate(-25%, 10%);
 }
-
-.head-btn:hover {
+.head-btn2 {
+    background-color: white;
+    color: var(--button-color);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-35%, 10%);
+}
+.head-btn:hover, .head-btn2:hover {
   opacity: 0.8;
   cursor: pointer;
 }
