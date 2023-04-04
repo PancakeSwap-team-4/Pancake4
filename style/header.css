@@ -114,13 +114,15 @@ header {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
       1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-#bunny-slide1 {
+#baloon-bunny {
   /* coniglietto blu */
-  width: 25%;
-  height: 100%;
-  object-fit: cover;
-  float: right;
+  width: 26%;
+  position: absolute;
+  top: -30%;
+  left: 73%;
+  transform: translate(25%, 0%);
   animation: fluttua 6s ease-in-out infinite;
+  z-index: 100;
 }
 @keyframes fluttua {
   0% {
@@ -274,6 +276,8 @@ header {
     left: 65%;
     transform: translate(25%, 0%);
 }
+
+/* SLIDE 4 */
 
 /* BUTTONS */
 
