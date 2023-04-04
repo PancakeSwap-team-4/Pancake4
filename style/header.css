@@ -13,7 +13,7 @@ header {
 .banner {
   position: relative;
   width: 78%;
-  height: 26vh;
+  height: 26.8vh;
   overflow: visible; /*FIRST OVERFLOW*/
   margin: 0 auto;
 }
@@ -86,34 +86,97 @@ header {
   width: 100%;
 }
 /* GENERAL SETTINGS */
-.slide .caption {
-    position: absolute;
-    bottom: 50px;
-    left: 24%;
-    transform: translateX(-50%);
-    color: #fff;
-}
-  
-#purple-webkit {
-    font-weight: 900;
-    background: linear-gradient(
-      166.02deg,
-      rgb(255, 178, 55) -5.1%,
-      rgb(255, 235, 55) 75.24%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
-}
-/* SLIDE 3*/ 
 
-.slide3 .caption h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-      1px 1px 1px rgba(0, 0, 0, 0.5);
+.slide .caption {
+  color: #fff;
 }
+
+#purple-webkit {
+  font-weight: 900;
+  background: linear-gradient(
+    166.02deg,
+    rgb(255, 178, 55) -5.1%,
+    rgb(255, 235, 55) 75.24%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
+}
+
+/* SLIDE 1 */
+
+.slide1 .caption {
+  margin-bottom: 2.2rem;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  transform: translate(5%, 0%);
+}
+.slide1 .caption h2 {
+  font-size: 40px;
+}
+.slide1 .caption p {
+  font-size: 25px;
+  font-weight: 500;
+}
+#space-station {
+  width: 53%;
+  position: sticky;
+  top: 0%;
+  left: 48%;
+  transform: translate(0%, 0%);
+  object-fit: contain;
+  border-radius: 35px;
+}
+#space-bunny {
+  width: 20%;
+  position: absolute;
+  top: -20%;
+  left: 65%;
+  transform: translate(25%, 0%);
+  animation: fluttua 7s ease-in-out infinite;
+}
+
+/* SLIDE 2 */
+
+.slide2 .caption {
+  margin-bottom: 2.2rem;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  transform: translate(5%, 0%);
+}
+.slide2 .caption h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.slide2 .caption p {
+  font-size: 20px;
+}
+#slide2-bunny {
+  width: 27%;
+  position: absolute;
+  top: -18%;
+  left: 65%;
+  transform: translate(25%, 0%);
+}
+
+/* SLIDE 3*/
+
+.slide3 .caption {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  transform: translate(5%, 0%);
+}
+.slide3 .caption h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 #baloon-bunny {
   /* coniglietto blu */
   width: 26%;
@@ -138,7 +201,7 @@ header {
 
 #coin-bottom {
   position: absolute;
-  top: 56%;
+  top: 57.4%;
   left: 50%;
   transform: translate(-140%, 0%);
   width: 18%;
@@ -182,7 +245,9 @@ header {
     background-position: -100% 0;
   }
 }
+
 /* animazione compare-scompare */
+
 #star1,
 #star2 {
   opacity: 1;
@@ -223,60 +288,6 @@ header {
   animation-duration: 3s;
 }
 
-/* SLIDE 1 */ 
-
-.slide1 .caption {
-    margin-bottom: 2.2rem;
-}
-.slide1 .caption h2{
-    font-size: 40px;
-}
-.slide1 .caption p{
-    font-size: 25px;
-    font-weight: 500;
-}
-#space-station{
-    width: 52%;
-    position: absolute;
-    top: 0%;
-    left: 48%;
-    transform: translate(0%, 0%);
-    object-fit: contain;
-    border-radius: 35px;
-}
-#space-bunny{
-    width: 20%;
-    position: absolute;
-    top: -20%;
-    left: 65%;
-    transform: translate(25%, 0%);
-    animation: fluttua 7s ease-in-out infinite;
-}
-
-/* SLIDE 2 */
-
-.slide2 .caption {
-    margin-bottom: 2.2rem;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    transform: translate(5%, 0%);
-}
-.slide2 .caption h2{
-    font-size: 40px;
-    font-weight: 500;
-}
-.slide2 .caption p{
-    font-size: 20px;
-}
-#slide2-bunny{
-    width: 26%;
-    position: absolute;
-    top: -17%;
-    left: 65%;
-    transform: translate(25%, 0%);
-}
-
 /* SLIDE 4 */
 
 /* BUTTONS */
@@ -288,7 +299,7 @@ header {
   border-radius: 15px;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
   position: absolute;
   top: 60%;
@@ -296,20 +307,21 @@ header {
   transform: translate(-25%, 10%);
 }
 .head-btn2 {
-    background-color: white;
-    color: var(--button-color);
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    transform: translate(-35%, 10%);
+  background-color: white;
+  color: var(--button-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-35%, 10%);
 }
-.head-btn:hover, .head-btn2:hover {
+.head-btn:hover,
+.head-btn2:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -325,17 +337,15 @@ header {
 }
 
 .indicator {
-  width: 10px;
-  height: 10px;
+  width: 25px;
+  height: 8px;
   background-color: rgba(17, 15, 15, 0.5);
-  border-radius: 50%;
-  margin: 0 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .indicator.active {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 9px;
   background-color: #ffffff;
 }
