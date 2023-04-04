@@ -197,35 +197,42 @@ header {
 
 .slide .caption {
   position: absolute;
-  bottom: 40px;
-  left: 20%;
+  bottom: 30px;
+  left: 25%;
   transform: translateX(-50%);
-  max-width: 500px;
   color: #fff;
 }
-
 .slide .caption h2 {
   font-size: 36px;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .slide .caption p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  background: linear-gradient(
+    166.02deg,
+    rgb(255, 178, 55) -5.1%,
+    rgb(255, 235, 55) 75.24%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.15rem #6532cd;
 }
 
 .head-btn {
   background-color: var(--button-color);
-  color: #1b1d1f;
-  border: none;
+  color: #ffffff;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 500;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .head-btn:hover {
