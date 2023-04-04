@@ -296,10 +296,10 @@ header {
   left: 2%;
   transform: translate(0%, -50%);
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-  1px 1px 1px rgba(0, 0, 0, 0.5);
+    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-#pancake-logo{
+#pancake-logo {
   width: 11%;
   position: absolute;
   top: 20%;
@@ -307,12 +307,45 @@ header {
   transform: translate(0%, -50%);
 }
 
-#gm-bunny{
+#gm-bunny {
   width: 88%;
   position: absolute;
   top: 50%;
   left: 12%;
   transform: translate(0%, -50%);
+}
+
+/* SLIDE 5 */
+
+.slide5 .caption {
+  position: absolute;
+  top: 40%;
+  left: 2.5%;
+  transform: translate(0%, -50%);
+}
+.slide5 .caption h2 {
+  font-size: 40px;
+  text-shadow: -1px -1px 1px #492286,
+    1px 1px 1px #492286, 2px 2px 2px #492286;
+    margin-bottom: 20px;
+}
+.slide5 .caption p{
+  font-weight: 500;
+  font-size: 24px;
+  background: linear-gradient(
+    166.02deg,
+    rgb(230, 155, 35) -5.1%,
+    rgb(237, 216, 27) 95.24%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#trading-bunny {
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(0%, -59%);
 }
 
 /* BUTTONS */
@@ -372,7 +405,7 @@ header {
   height: 8px;
   background-color: #ffffff;
 }
-.indicator:first-child{
+.indicator:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
