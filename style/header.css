@@ -1,7 +1,245 @@
 @import url(../root.css);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #1b1d1f;
+  width: 100%;
+  height: 100vh;
+}
+.banner {
+  position: relative;
+  width: 75%;
+  height: 30vh;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
+.carousel {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.slide {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  border-radius: 45px;
+}
+.slide1 {
+  background: linear-gradient(
+    114.79deg,
+    rgb(192, 64, 252) -17.76%,
+    rgb(75, 60, 255) 99.88%
+  );
+  border-radius: 45px;
+  height: 100%;
+  width: 100%;
+}
+.slide2 {
+  background: linear-gradient(
+    114.79deg,
+    rgb(192, 64, 252) -17.76%,
+    rgb(75, 60, 255) 99.88%
+  );
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide3 {
+  background: linear-gradient(
+    114.79deg,
+    rgb(192, 64, 252) -17.76%,
+    rgb(75, 60, 255) 99.88%
+  );
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide4 {
+  background: linear-gradient(
+    114.79deg,
+    rgb(192, 64, 252) -17.76%,
+    rgb(75, 60, 255) 99.88%
+  );
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide5 {
+  background: linear-gradient(
+    114.79deg,
+    rgb(192, 64, 252) -17.76%,
+    rgb(75, 60, 255) 99.88%
+  );
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+#bunny-slide1 {
+  /* coniglietto blu */
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  float: right;
+  animation: fluttua 2s ease-in-out infinite;
+}
+
+@keyframes fluttua {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#coin-bottom {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-120%, 0%);
+  width: 20%;
+}
+#coin-top {
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  transform: translate(-20%, 0%);
+  width: 18%;
+}
+.framework-container {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(0%, -50%);
+  width: 15%;
+}
+.framework-container img {
+  width: 100%;
+}
+.framework-light{
+  content: "";
+  background-image: linear-gradient(
+    90deg,
+    #ccc 0px,
+    rgba(229, 229, 229, 0.25) 40px,
+    rgba(204, 204, 204, 0.082) 80px
+  );
+  position: absolute;
+  width: 100%;
+  height: 96%;
+  background-position: 100% 0;
+  background-size: 300%;
+  animation: fadeInOut 1.4s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes fadeInOut {
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/* animazione compare-scompare */
+#star1, #star2 {
+  opacity: 1;
+  animation-name: fade-out-in;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-out-in {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#star1{
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  transform: translate(0%, -50%);
+  width: 5%;
+}
+
+.slide .caption {
+  position: absolute;
+  bottom: 40px;
+  left: 20%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  color: #fff;
+}
+
+.slide .caption h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.slide .caption p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.head-btn {
+  background-color: var(--button-color);
+  color: #1b1d1f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.head-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(17, 15, 15, 0.5);
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.indicator.active {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
