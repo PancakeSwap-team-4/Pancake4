@@ -106,7 +106,6 @@ header {
 /* SLIDE 1 */
 
 .slide1 .caption {
-  margin-bottom: 2.2rem;
   position: absolute;
   top: 10%;
   left: 0%;
@@ -140,7 +139,6 @@ header {
 /* SLIDE 2 */
 
 .slide2 .caption {
-  margin-bottom: 2.2rem;
   position: absolute;
   top: 10%;
   left: 0%;
@@ -166,7 +164,7 @@ header {
 .slide3 .caption {
   position: absolute;
   top: 10%;
-  left: 0%;
+  left: 1%;
   transform: translate(5%, 0%);
 }
 .slide3 .caption h2 {
@@ -289,6 +287,33 @@ header {
 }
 
 /* SLIDE 4 */
+
+.slide4 .caption h2 {
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  transform: translate(0%, -50%);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+  1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#pancake-logo{
+  width: 11%;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  transform: translate(0%, -50%);
+}
+
+#gm-bunny{
+  width: 88%;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translate(0%, -50%);
+}
 
 /* BUTTONS */
 
