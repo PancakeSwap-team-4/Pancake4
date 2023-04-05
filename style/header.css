@@ -99,6 +99,7 @@ header {
     rgb(255, 235, 55) 75.24%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
 }
@@ -338,6 +339,7 @@ header {
     rgb(237, 216, 27) 95.24%
   );
   -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #trading-bunny {
