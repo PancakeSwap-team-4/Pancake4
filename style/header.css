@@ -14,8 +14,9 @@ header {
   position: relative;
   width: 78%;
   height: 26.8vh;
-  overflow: visible; /*FIRST OVERFLOW*/
+  overflow: hidden; /*FIRST OVERFLOW*/
   margin: 0 auto;
+  z-index: 0;
 }
 
 .carousel {
@@ -232,8 +233,8 @@ header {
     rgba(204, 204, 204, 0.082) 80px
   );
   position: absolute;
-  width: 83%;
-  height: 96%;
+  width: 82%;
+  height: 93%;
   background-position: 100% 0;
   background-size: 300%;
   animation: fadeInOut 1.4s linear infinite;
@@ -326,11 +327,10 @@ header {
 }
 .slide5 .caption h2 {
   font-size: 40px;
-  text-shadow: -1px -1px 1px #492286,
-    1px 1px 1px #492286, 2px 2px 2px #492286;
-    margin-bottom: 20px;
+  text-shadow: -1px -1px 1px #492286, 1px 1px 1px #492286, 2px 2px 2px #492286;
+  margin-bottom: 20px;
 }
-.slide5 .caption p{
+.slide5 .caption p {
   font-weight: 500;
   font-size: 24px;
   background: linear-gradient(
@@ -339,7 +339,7 @@ header {
     rgb(237, 216, 27) 95.24%
   );
   -webkit-background-clip: text;
-    background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #trading-bunny {
@@ -400,7 +400,6 @@ header {
   height: 8px;
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 .indicator.active {
   width: 24px;
