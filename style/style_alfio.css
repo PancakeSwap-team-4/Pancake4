@@ -1,0 +1,107 @@
+.million-container {
+    background-image: linear-gradient(#ffffff, #D7CAEC);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.million {
+    text-align: center;
+}
+
+.million-container > .million > svg {
+    margin-bottom: 1.5rem;
+}
+
+.million-container > .million > h2 {
+    color: var(--h2-light-color);
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.million-container > .million h2:nth-child(3), .million-container > .million p:nth-child(5), .million-container > .million p:nth-child(6){
+    margin-bottom: 2rem;
+}
+
+.million-container > .million > p, .text-description > p {
+    color: var(--paragraf-color);
+    line-height: 1.5rem;
+}
+
+.million-cards-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.million-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 280px;
+}
+
+.million-card-content {
+    padding: 1.5rem;
+}
+
+.million-cards-container > .million-card > .million-card-content .svg {
+    text-align: end;
+}
+
+.svg-1 > svg {
+    fill: var(--second-color);
+}
+
+.svg-2 > svg {
+    fill: #1fc7d4;
+}
+
+.svg-3 > svg {
+    fill: #ed4b9e;
+}
+
+.million-cards-container > .million-card > .million-card-content > .text-description {
+    text-align: start;
+    margin-top: 4rem;;
+}
+
+.text-description > h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.text-description > h2:first-child{
+    color: var(--h2-light-color);
+}
+
+.million-cards-container > .million-card:first-child > .million-card-content > .text-description > h2:nth-child(2) {
+    color: var(--second-color);
+    margin-bottom: 1.5rem;
+}
+
+.million-cards-container > .million-card:nth-child(2) > .million-card-content > .text-description > h2:nth-child(2) {
+    color: #1fc7d4;
+    margin-bottom: 1.5rem;
+}
+
+.million-cards-container > .million-card:nth-child(3) > .million-card-content > .text-description > h2:nth-child(2) {
+    color: #ed4b9e;
+    margin-bottom: 1.5rem;
+}
+
+.million-oblique-line {
+    height: 3rem;
+    background: linear-gradient(to bottom left, #D7CAEC 50%, #ffffff 50%);
+}
+
+@media screen and (max-width: 850px) {
+    .million-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
