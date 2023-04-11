@@ -96,6 +96,10 @@
     background: linear-gradient(to bottom left, #D7CAEC 50%, #ffffff 50%);
 }
 
+.win {
+    background-image: linear-gradient(#000000, #ffffff);
+}
+
 @media screen and (max-width: 850px) {
     .million-cards-container {
         display: flex;
