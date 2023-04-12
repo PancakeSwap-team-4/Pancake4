@@ -244,10 +244,13 @@ header {
   height: 93%;
   background-position: 100% 0;
   background-size: 300%;
-  animation: fadeInOut 1.4s linear infinite;
+  animation: fadeInOut 8s infinite ease-in-out;
   animation-play-state: running;
 }
 @keyframes fadeInOut {
+  80% {
+    background-position: 100% 0;
+  }
   to {
     background-position: -100% 0;
   }
