@@ -450,3 +450,49 @@ header {
     transform: translate(0, 0);
   }
 }
+
+.head-caption h1 {
+  color: var(--second-color);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.head-caption h3 {
+  margin-top: 25px;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 20px;
+}
+.head-caption {
+  width: 40%;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  transform: translate(0%, 0%);
+}
+.moon-btn {
+  background-color: var(--button-color);
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+.moon-btn2 {
+  background-color: white;
+  color: var(--button-color);
+  padding: 10px 25px;
+  border-radius: 15px;
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  border: 2px var(--button-color) solid;
+}
+.head-btns{
+  margin-top: 30px;
+}
