@@ -429,7 +429,9 @@ header {
 /* MOON SECTION */
 
 .moon {
-  background-color: #ecf6ff;
+  background-color: #EBF6FF;
+  width: 100%;
+  height: 88vh;
 }
 .moon #astro-bunny {
   width: 40%;
@@ -438,6 +440,7 @@ header {
   left: 50%;
   transform: translate(0%, 0%);
   animation: fluttua-b 7s ease-in-out infinite;
+  z-index: 2;
 }
 @keyframes fluttua-b {
   0% {
@@ -470,6 +473,7 @@ header {
   top: 65%;
   left: 10%;
   transform: translate(0%, 0%);
+  z-index: 1000;
 }
 .moon-btn {
   background-color: var(--button-color);
@@ -500,4 +504,12 @@ header {
 .moon-btn2:hover{
   opacity: 0.7;
   cursor: pointer;
+}
+.round-background{
+  width: 100%;
+  position: absolute;
+  top: 98%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  z-index: 1;
 }
