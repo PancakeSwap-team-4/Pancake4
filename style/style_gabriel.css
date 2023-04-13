@@ -78,7 +78,7 @@ nav {
     position: absolute;
     background-color: #FFFFFF;
     min-width: 160px;
-    border-radius: 10%;
+    border-radius: 10px;
     border: 1px solid #e7e3eb;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -102,6 +102,7 @@ nav {
     border-style: solid;
     border-color: #ffb237;
     margin-left: 8px;
+    color: #ffb237;
 }
 
 .navbar-main .navbar-mid .navbar-dropdown .navbar-dropdown-content .with-border {
@@ -118,7 +119,7 @@ nav {
 
 .navbar-main .navbar-mid .navbar-dropdown .navbar-dropdown-content a:hover {
     background-color: #e7e3eb;
-    border-radius: 7%;
+    border-radius: 10px;
     cursor: pointer;
 }
 
