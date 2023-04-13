@@ -6,11 +6,12 @@
   box-sizing: border-box;
 }
 header {
-  background-color: #1b1d1f;
+  background-color: #ecf6ff;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
+  padding-top: 5%;
 }
-.banner {
+.elephant {
   position: relative;
   width: 78%;
   height: 26.8vh; /*FIRST OVERFLOW*/
@@ -38,7 +39,7 @@ header {
   opacity: 0;
   transition: opacity 0.2s linear;
 }
-.slide.active{
+.slide.active {
   opacity: 1;
 }
 .slide1 {
@@ -243,10 +244,13 @@ header {
   height: 93%;
   background-position: 100% 0;
   background-size: 300%;
-  animation: fadeInOut 1.4s linear infinite;
+  animation: fadeInOut 8s infinite ease-in-out;
   animation-play-state: running;
 }
 @keyframes fadeInOut {
+  80% {
+    background-position: 100% 0;
+  }
   to {
     background-position: -100% 0;
   }
@@ -365,7 +369,7 @@ header {
   border-radius: 15px;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-decoration: none;
   position: absolute;
   top: 60%;
@@ -379,7 +383,7 @@ header {
   border-radius: 15px;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-decoration: none;
   position: absolute;
   top: 60%;
@@ -420,4 +424,92 @@ header {
 .indicator:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+/* MOON SECTION */
+
+.moon {
+  background-color: #EBF6FF;
+  width: 100%;
+  height: 88vh;
+}
+.moon #astro-bunny {
+  width: 40%;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(0%, 0%);
+  animation: fluttua-b 7s ease-in-out infinite;
+  z-index: 2;
+}
+@keyframes fluttua-b {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.head-caption h1 {
+  color: var(--second-color);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.head-caption h3 {
+  margin-top: 25px;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 20px;
+}
+.head-caption {
+  width: 40%;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  transform: translate(0%, 0%);
+  z-index: 1000;
+}
+.moon-btn {
+  background-color: var(--button-color);
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+}
+.moon-btn2 {
+  background-color: white;
+  color: var(--button-color);
+  padding: 10px 28px;
+  border-radius: 15px;
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  border: 2px var(--button-color) solid;
+}
+.head-btns{
+  margin-top: 35px;
+}
+.moon-btn:hover,
+.moon-btn2:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+.round-background{
+  width: 100%;
+  position: absolute;
+  top: 98%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  z-index: 1;
 }
