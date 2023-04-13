@@ -3,6 +3,9 @@
 @import url(./style/header.css);
 @import url(./style/style_alfio.css);
 @import url('./style/styleTrade.css');
+@import url('./style/banner-footer.css');
+@import url('./style/styleCake.css');
+@import url('./style/styleEarn.css');
 
 *{
     margin: 0;
