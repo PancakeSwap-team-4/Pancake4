@@ -35,7 +35,7 @@ header {
   width: 20%;
   height: 100%;
   position: relative;
-  border-radius: 35px;
+  border-radius: 30px;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -45,10 +45,10 @@ header {
 .slide1 {
   background: linear-gradient(
     114.79deg,
-    rgb(192, 64, 252) -17.76%,
-    rgb(75, 60, 255) 99.88%
+    rgb(132, 58, 194) 0.76%,
+    rgb(69, 66, 208) 99.88%
   );
-  border-radius: 35px;
+  border-radius: 30px;
   height: 100%;
   width: 100%;
   position: relative;
@@ -56,10 +56,10 @@ header {
 .slide2 {
   background: linear-gradient(
     114.79deg,
-    rgb(192, 64, 252) -17.76%,
-    rgb(75, 60, 255) 99.88%
+    rgb(150, 111, 252) -17.76%,
+    rgb(114, 187, 239) 99.88%
   );
-  border-radius: 35px;
+  border-radius: 30px;
   height: 100%;
   width: 100%;
 }
@@ -69,27 +69,27 @@ header {
     rgb(192, 64, 252) -17.76%,
     rgb(75, 60, 255) 99.88%
   );
-  border-radius: 35px;
+  border-radius: 30px;
   height: 100%;
   width: 100%;
 }
 .slide4 {
   background: linear-gradient(
     114.79deg,
-    rgb(192, 64, 252) -17.76%,
-    rgb(75, 60, 255) 99.88%
+    rgb(166, 184, 252) -17.76%,
+    rgb(103, 98, 205) 99.88%
   );
-  border-radius: 35px;
+  border-radius: 30px;
   height: 100%;
   width: 100%;
 }
 .slide5 {
   background: linear-gradient(
-    114.79deg,
-    rgb(192, 64, 252) -17.76%,
-    rgb(75, 60, 255) 99.88%
+    0deg,
+    rgb(69, 42, 122) 10%,
+    rgb(118, 68, 216) 90%
   );
-  border-radius: 35px;
+  border-radius: 30px;
   height: 100%;
   width: 100%;
 }
