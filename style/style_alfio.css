@@ -104,27 +104,22 @@
     position: relative;
     z-index: 1000 !important;
     padding: 4rem;
-}
-
-.img-container {
-    z-index: -100 !important;
+    overflow: hidden;
 }
 
 .img-top-right {
     position: absolute;
-    top: -1rem;
-    right: 0;
-    z-index: -1000;
-    height: 70%;
+    top: -2rem;
+    right: -1rem;
+    height: 60%;
     animation: galleggia 2.5s ease-in-out infinite;
 }
 
 .img-bottom-left{
     position: absolute;
-    bottom: -1rem;
-    left: 0;
-    z-index: -1000;
-    height: 70%;
+    bottom: -2rem;
+    left: -1rem;
+    height: 60%;
     animation: galleggia 2.5s ease-in-out infinite;
 }
 
