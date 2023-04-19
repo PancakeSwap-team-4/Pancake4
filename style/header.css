@@ -121,7 +121,8 @@ header {
   transform: translate(5%, 0%);
 }
 .slide1 .caption h2 {
-  font-size: 40px;
+  font-size: 45px;
+  line-height: 1.1;
 }
 .slide1 .caption p {
   font-size: 25px;
@@ -319,7 +320,6 @@ header {
   left: 2%;
   transform: translate(0%, -50%);
 }
-
 #gm-bunny {
   width: 88%;
   position: absolute;
