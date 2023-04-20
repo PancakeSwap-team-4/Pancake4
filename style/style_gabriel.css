@@ -272,6 +272,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   margin-right: 8px;
+  overflow: hidden;
 }
 
 .navbar-main .navbar-right .nav-network .network-button div img {
