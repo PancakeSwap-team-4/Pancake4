@@ -24,7 +24,46 @@ function randomNumber(){
 
 window.addEventListener("load", randomNumber);
 
+const h2Million = document.querySelectorAll('.million > h2');
+const bgMillion = document.querySelector('.million-container');
+const millionCard = document.querySelectorAll('.million-card');
+const h2MillionCard = document.querySelectorAll('.text-description > h2:first-child');
+const obliqueLine = document.querySelector('.million-oblique-line');
+const winContainer = document.querySelector('.win-container');
+const win = document.querySelector('.win');
+const winH2 = document.querySelector('.win > h2:first-child');
+const winButton = document.querySelectorAll('.win-button');
+const svgButton = document.querySelectorAll('.win-button > svg');
+
+
 function darkMode(){
-    let element = document.body;
-    element.classList.toggle("dark-mode");
+    h2Million.forEach((item) => {
+        item.classList.toggle('text-white');
+    })
+
+    bgMillion.classList.toggle('dark-million-container');
+
+    millionCard.forEach((item) => {
+        item.classList.toggle('dark-million-card');
+    })
+
+    h2MillionCard.forEach((item) => {
+        item.classList.toggle('text-white');
+    });
+
+    obliqueLine.classList.toggle('dark-million-oblique-line');
+
+    winContainer.classList.toggle('background-win-millions');
+
+    win.classList.toggle('dark-win');
+
+    winH2.classList.toggle('text-white');
+
+    winButton.forEach((item) => {
+        item.classList.toggle('dark-win-button');
+    });
+
+    svgButton.forEach((item) => {
+        item.classList.toggle('dark-svg-win');
+    })
 }

@@ -242,10 +242,37 @@
     transition: 0.3s ease-in-out;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
+.dark-million-container{
+    background-image: linear-gradient(#000000, #201335);
+}
+
+.text-white {
+    color: var(--h2-dark-color) !important;
+}
+
+.dark-million-card{
+    background-color: #27262C !important;
+}
+
+.dark-million-oblique-line{
+    background: linear-gradient(to bottom left, #201335 50%, #000000 50%) !important;
+}
+
+.background-win-millions {
+    background-image: linear-gradient(#0B4475, #091115);
+}
+
+.dark-win-button {
+    color: black !important;
+}
+
+.dark-svg-win{
+    fill: #000000 !important;
+}
+
+.dark-win {
+    background-color:rgba(0, 0, 0, 0.7);
+}
 
 @keyframes galleggia {
     0% {
