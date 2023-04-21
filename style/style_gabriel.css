@@ -87,6 +87,10 @@ nav {
   cursor: pointer;
 }
 
+.navbar-main .navbar-mid .navbar-dropdown .dropdown-dark-mode-main:hover {
+  background-color: #353547 !important;
+}
+
 .navbar-main .navbar-mid .navbar-dropdown .navbar-dropdown-content {
   width: 250px;
   display: none;
@@ -96,6 +100,11 @@ nav {
   border-radius: 10px;
   border: 1px solid #e7e3eb;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-main .navbar-mid .navbar-dropdown .dropdown-dark-mode {
+  background-color: #27262c;
+  border: #353547;
 }
 
 .navbar-main .navbar-mid .navbar-dropdown .navbar-dropdown-content a {
@@ -147,6 +156,9 @@ nav {
   cursor: pointer;
 }
 
+.navbar-main .navbar-mid .navbar-dropdown .dropdown-dark-mode a:hover {
+  background-color: #353547;
+}
 .navbar-main .navbar-mid .navbar-dropdown:hover .navbar-dropdown-content {
   display: block;
   z-index: 1;
@@ -243,7 +255,7 @@ nav {
 .navbar-main .navbar-right .navbar-settings .no-border-button {
   border: none;
   outline: none;
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -294,6 +306,169 @@ nav {
   font-family: inherit;
   font-weight: 500;
   font-size: 17px;
+}
+
+.settings-box {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close-window {
+  display: none !important;
+}
+
+.settings-box-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-box .settings-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e3eb;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+  border-radius: 35px;
+}
+
+.settings-box .settings-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  height: 75px;
+  border-bottom: 1px solid #e7e3eb;
+  background: linear-gradient(111.68deg,#f2ecf2,#e8f2f6);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+.settings-box .settings-top .settings-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #353547;
+}
+
+.settings-box .settings-top .close-setting .close-settings-button {
+  height: 48px;
+  width: 48px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.settings-box .settings-main {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-box .settings-main .settings-main-title {
+  font-size: 12px;
+  color: #7645d9;
+  font-weight: 600;
+}
+
+.settings-box .settings-main .settings-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch {
+  text-align: left;
+  width: 56px;
+  height: 32px;
+  border-radius: 60px;
+  background-color: #4ed164;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch input {
+  opacity: 0;
+  position: absolute;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch span::before, .settings-box .settings-main .settings-button .menu-buttons .switch span::after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch input:focus ~ span {
+  box-shadow: 0 0 0 4px #43b556;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch input:checked:focus ~ span {
+  box-shadow: 0 0 0 4px #fff;
+} 
+
+.settings-box .settings-main .settings-button .menu-buttons .switch span::before {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: opacity .2s ease-out .1s, transform .2s ease-out .1s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch span::after {
+  top: 50%;
+  z-index: 3;
+  transition: transform .4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  width: 32px;
+  height: 32px;
+  transform: translate3d(0, -50%, 0);
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch input:checked ~ span::before {
+  transform: scale(0);
+  opacity: .7s;
+}
+
+.settings-box .settings-main .settings-button .menu-buttons .switch input:checked ~ span::after {
+  transform: translate3d(100%, -50%, 0);
+}
+
+.dark-mode {
+  background-color: #27262c;
+  border: #27262c;
+}
+
+.dark-mode-svg {
+  fill: white;
+}
+
+.dark-mode-button-text {
+  color: #ffffff !important;
+  background-color: #353547 !important;
 }
 
 @media screen and (max-width: 968px) {

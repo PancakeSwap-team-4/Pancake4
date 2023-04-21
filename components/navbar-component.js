@@ -1,0 +1,36 @@
+const darkModeButton = document.querySelector("#dark-mode-button");
+const navBarDesktop = document.querySelector(".navbar-main");
+const darkModeSvg = document.querySelector(".logo-title");
+const networkButton = document.querySelectorAll(".network-button")
+const dropButton = document.querySelectorAll(".navbar-dropbtn")
+const dropItem = document.querySelectorAll(".navbar-dropdown-content");
+const settingBox = document.querySelector(".settings-box")
+
+
+function toggleDark() {
+  navBarDesktop.classList.toggle("dark-mode");
+  darkModeSvg.classList.toggle("dark-mode-svg");
+  networkButton.forEach(element => {
+    element.classList.toggle("dark-mode-button-text")
+  })
+  dropButton.forEach(dropDown => {
+    dropDown.classList.toggle("dropdown-dark-mode-main")
+  });
+  dropItem.forEach(item => {
+    item.classList.toggle("dropdown-dark-mode")
+  })
+};
+
+
+function toggleSettings() {
+    settingBox.classList.toggle("settings-box-toggle");
+}
+
+window.onclick = function(event) {
+    if (event.target == settingBox) {
+      settingBox.classList.add("close-window");
+      settingBox.classList.remove("settings-box-toggle")
+    } else {
+        settingBox.classList.remove("close-window")
+    }
+  }
