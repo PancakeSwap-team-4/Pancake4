@@ -3,6 +3,7 @@ const cardContentRight = document.querySelector('.win-card-content');
 const updateNumber = 5000;
 const speed = 300;
 
+//generiamo numeri random con counter
 function randomNumber(){
     const target = Math.floor((Math.random() * 10000) + 80000);
     let countStart = 0;
@@ -21,8 +22,8 @@ function randomNumber(){
     }, 1/1000);
 
 }
-
 window.addEventListener("load", randomNumber);
+
 
 const h2Million = document.querySelectorAll('.million > h2');
 const bgMillion = document.querySelector('.million-container');
@@ -34,7 +35,6 @@ const win = document.querySelector('.win');
 const winH2 = document.querySelector('.win > h2:first-child');
 const winButton = document.querySelectorAll('.win-button');
 const svgButton = document.querySelectorAll('.win-button > svg');
-
 
 function darkMode(){
     h2Million.forEach((item) => {
