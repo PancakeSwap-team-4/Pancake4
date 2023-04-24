@@ -1,17 +1,14 @@
 @import url("root.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Kanit", sans-serif;
-}
-
 /* BANNER */
 
 .top-side {
   display: flex;
-  background-color: #7645d9;
+  background: linear-gradient(
+    0deg,
+    rgb(69, 42, 122) 10%,
+    rgb(118, 68, 216) 90%
+  );
   height: 70px;
   min-height: 70px;
   max-height: 70px;
@@ -21,7 +18,6 @@
 .box-logo {
   display: flex;
   margin: 0 auto;
-  
 }
 
 .logo {
@@ -34,20 +30,24 @@
 
 body img {
   max-width: 100%;
-  height: auto;
   width: 92px;
 }
 
 .box-text {
   display: flex;
   padding: 10px;
-  background-color: #452a7a;
+  background:  rgb(76, 49, 121);
+  background: linear-gradient(
+    0deg,
+    rgb(76, 49, 121) 10%,
+    rgb(73, 43, 120) 90%
+  );
   border-radius: 16px;
   border: 1px;
   height: 85%;
+  width: 850px;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 
 .primary-text {
@@ -83,22 +83,29 @@ body img {
   cursor: pointer;
   align-items: center;
   color: white;
-  
-  
+  position: absolute;
+  top: 3.5%;
+  left: 97%;
+  transform: translate(0%, 0%);
+  font-size: 18px;
+}
+.close:hover{
+  opacity: 0.5;
 }
 
-/*   FOOTER   */
+/*   FOOTER  ------------------------------------------- */
 
 .footer {
   display: flex;
   background-color: rgb(40, 39, 39);
   justify-content: center;
+  width: 100%;
 }
 
 .box-footer {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 80%;
   padding: auto;
 }
 
@@ -137,11 +144,10 @@ body img {
   width: 500px;
   padding: auto;
   justify-content: space-between;
-  
 }
 
-#social{
-fill: rgb(103, 88, 101);
+#social {
+  fill: rgb(103, 88, 101);
 }
 .footer-theme {
   display: flex;
@@ -161,7 +167,6 @@ fill: rgb(103, 88, 101);
   fill: rgb(103, 88, 101);
   border: none;
   cursor: pointer;
-  
 }
 .box-buy-cake {
   display: flex;
@@ -169,12 +174,11 @@ fill: rgb(103, 88, 101);
   padding: auto;
 }
 
-.buy{
+.buy {
   fill: rgb(255, 255, 255);
-  
 }
 
-.button-buy{
+.button-buy {
   display: flex;
   padding: 10px;
   background-color: #52e6e1;
@@ -183,6 +187,4 @@ fill: rgb(103, 88, 101);
   height: 85%;
   align-items: center;
   flex-wrap: wrap;
- 
-  
 }
