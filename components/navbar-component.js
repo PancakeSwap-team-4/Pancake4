@@ -5,6 +5,7 @@ const networkButton = document.querySelectorAll(".network-button")
 const dropButton = document.querySelectorAll(".navbar-dropbtn")
 const dropItem = document.querySelectorAll(".navbar-dropdown-content");
 const settingBox = document.querySelector(".settings-box")
+const body = document.querySelector("body")
 
 
 function toggleDark() {
@@ -24,12 +25,14 @@ function toggleDark() {
 
 function toggleSettings() {
     settingBox.classList.toggle("settings-box-toggle");
+    body.style.overflow = "hidden";
 }
 
 window.onclick = function(event) {
     if (event.target == settingBox) {
       settingBox.classList.add("close-window");
       settingBox.classList.remove("settings-box-toggle")
+      body.style.overflow = "auto"
     } else {
         settingBox.classList.remove("close-window")
     }
