@@ -11,10 +11,19 @@
   display: none;
 }
 
+.nav-hidden {
+  transform: translateY(-56px);
+  box-shadow: none;
+}
+
 nav {
   font-family: "kanit", sans-serif;
   z-index: 1;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s;
 }
 
 .navbar-main {
