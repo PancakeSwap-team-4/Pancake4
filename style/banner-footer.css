@@ -96,9 +96,7 @@ body img {
 /*   FOOTER  ------------------------------------------- */
 
 .footer {
-  display: flex;
   background-color: rgb(40, 39, 39);
-  justify-content: center;
   width: 100%;
 }
 
@@ -106,22 +104,24 @@ body img {
   display: flex;
   flex-direction: column;
   width: 80%;
-  padding: auto;
+  margin: 0 auto;
+  margin-top: 5%;
 }
 
 .footer-inside {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: auto;
+  margin-top: 1%;
 }
 
 .text-footer {
   list-style: none;
-  padding: auto;
   text-decoration: none;
 }
-
+.text-footer li{
+   margin: 10px;
+}
 .title {
   color: #7645d9;
   text-transform: uppercase;
@@ -142,12 +142,11 @@ body img {
 .footer-social {
   display: flex;
   width: 500px;
-  padding: auto;
-  justify-content: space-between;
+  gap: 25px;
 }
 
 #social {
-  fill: rgb(103, 88, 101);
+  fill: rgb(139, 130, 138);
 }
 .footer-theme {
   display: flex;
@@ -170,8 +169,12 @@ body img {
 }
 .box-buy-cake {
   display: flex;
-  width: 500px;
+  width: 50%;
   padding: auto;
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(0%, 0%);
 }
 
 .buy {
@@ -187,4 +190,17 @@ body img {
   height: 85%;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 15px;
+}
+.money{
+  color: #927eba;
+  font-weight: 600;
+}
+.button-buy a{
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+a{
+  text-decoration: none;
 }
