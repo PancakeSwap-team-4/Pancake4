@@ -7,16 +7,51 @@
   box-sizing: border-box;
 }
 
+.security-banner {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  transition: transform 0.3s;
+}
+
+.security-banner .security-main  {
+  height: 70px;
+}
+
+.security-banner .security-main .security-center {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security-banner .security-main .security-center .bunny-security {
+  background-image: url("https://pancakeswap.finance/images/decorations/phishing-warning-bunny.webp");
+  height: 120px;
+  width: 90px;
+  background-position: center;
+  background-size: contain;
+}
+
 .navbar-mobile {
   display: none;
 }
 
+.security-hidden {
+  transform: translateY(-70px);
+  box-shadow: none;
+}
+
 .nav-hidden {
-  transform: translateY(-56px);
+  transform: translateY(-126px);
   box-shadow: none;
 }
 
 nav {
+  margin-top: 70px;
   font-family: "kanit", sans-serif;
   z-index: 1;
   width: 100%;
