@@ -9,7 +9,7 @@ header {
   background-color: #ecf6ff;
   width: 100%;
   height: 50vh;
-  padding-top: 5%;
+  padding-top: 15%;
 }
 .elephant {
   position: relative;
@@ -134,6 +134,11 @@ header {
   left: 48%;
   transform: translate(0.15%, 0%);
   border-radius: 30px;
+}
+#space-station-ipad,
+#space-bunny-ipad,
+#slide2-bunny-ipad {
+  display: none;
 }
 #space-bunny {
   width: 20%;
@@ -471,19 +476,6 @@ header {
   }
 }
 
-.head-caption h1 {
-  color: var(--second-color);
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 1.1;
-}
-.head-caption h3 {
-  margin-top: 25px;
-  color: #280d5f;
-  font-weight: 600;
-  line-height: 1.1;
-  font-size: 20px;
-}
 .head-caption {
   width: 40%;
   position: absolute;
@@ -491,6 +483,21 @@ header {
   left: 10%;
   transform: translate(0%, 0%);
   z-index: 1000;
+}
+
+.head-caption h1 {
+  color: var(--second-color);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.head-caption h3 {
+  margin-top: 25px;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 20px;
 }
 .moon-btn {
   background-color: var(--button-color);
@@ -533,7 +540,7 @@ header {
   z-index: 1;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 820px) {
   .elephant {
     width: 88%;
   }
@@ -544,23 +551,25 @@ header {
   /* SLIDE 1 ----------------- */
 
   #space-station-ipad {
-    width: 80%;
+    width: 83.9%;
     position: absolute;
-    top: 1%;
-    left: 20%;
+    top: 0%;
+    left: 16.1%;
     transform: translate(0%, 0%);
+    display: initial;
   }
   #space-station {
     display: none;
   }
   #space-bunny-ipad {
-    width: 30%;
+    width: 32%;
     position: absolute;
-    top: -22%;
-    left: 54%;
+    top: -25%;
+    left: 50%;
     transform: translate(25%, 0%);
     animation: fluttua 7s ease-in-out infinite;
     z-index: 10;
+    display: initial;
   }
   #space-bunny {
     display: none;
@@ -576,11 +585,12 @@ header {
     text-shadow: 1px 5px 20px rgba(0, 0, 0, 0.4);
   }
   #slide2-bunny-ipad {
-    width: 28%;
+    width: 29%;
     position: absolute;
-    top: -7%;
-    left: 63%;
+    top: -8%;
+    left: 61.5%;
     transform: translate(33%, 0%);
+    display: initial;
   }
   #slide2-bunny {
     display: none;
@@ -598,9 +608,10 @@ header {
 
   #baloon-bunny {
     /* coniglietto blu */
-    width: 38%;
+    width: 40%;
     top: -36%;
-    left: 65%;
+    left: 63%;
+    z-index: 0;
   }
   #star1 {
     top: 70%;
@@ -632,7 +643,7 @@ header {
   }
   #gm-bunny {
     width: 120%;
-    top: 55%;
+    top: 56%;
     left: -20%;
     transform: translate(0%, -50%);
   }
@@ -647,8 +658,36 @@ header {
     font-weight: 500;
   }
   #trading-bunny {
-    width: 54%;
+    width: 55%;
     left: 55%;
+  }
+  /* THE MOON -------------------- */
+
+  .moon {
+    background-color: #ebf6ff;
+    width: 100%;
+    height: 14vh;
+  }
+  .moon #astro-bunny {
+    width: 32%;
+    top: 37%;
+    left: 65%;
+  }
+  .head-caption {
+    width: 88%;
+    top: 25%;
+    left: 5%;
+  }
+  .head-caption h1 {
+    font-size: 44px;
+  }
+  .round-background {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    z-index: 1;
   }
 
   /* BUTTONS -------------------- */
