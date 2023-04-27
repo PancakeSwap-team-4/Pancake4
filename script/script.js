@@ -22,7 +22,7 @@ function nextSlide() {
   goToSlide(nextIndex);
 }
 
-setInterval(nextSlide, 100000000);
+setInterval(nextSlide, 800000);
 
 indicators.forEach((indicator, index) => {
   indicator.addEventListener("click", () => {
