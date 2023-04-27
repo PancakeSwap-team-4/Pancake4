@@ -458,7 +458,7 @@ header {
 .moon #astro-bunny {
   width: 40%;
   position: absolute;
-  top: 42%;
+  top: 60%;
   left: 50%;
   transform: translate(0%, 0%);
   animation: fluttua-b 7s ease-in-out infinite;
@@ -479,7 +479,7 @@ header {
 .head-caption {
   width: 40%;
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 10%;
   transform: translate(0%, 0%);
   z-index: 1000;
