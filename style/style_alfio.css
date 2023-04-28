@@ -189,7 +189,7 @@
 }
 
 .win-card-content > h2{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -299,7 +299,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .win {
         padding: 0;
+    }
+
+    .win > h2 {
+        padding: 2rem 2rem 0 2rem;
     }
 
     .win-card-container {
