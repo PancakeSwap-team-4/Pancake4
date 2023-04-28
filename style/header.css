@@ -5,10 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  width: 100%;
+  height: 100%;
+}
 header {
   background-color: #ecf6ff;
   width: 100%;
-  height: 50vh;
+  height: 50%;
   padding-top: 15%;
 }
 .elephant {
@@ -111,6 +115,18 @@ header {
   -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
 }
 
+.purple-webkit-2{
+  font-weight: 900;
+  font-size: 24px;
+  background: linear-gradient(
+    166.02deg,
+    rgb(255, 178, 55) -5.1%,
+    rgb(255, 235, 55) 75.24%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* SLIDE 1 */
 
 .slide1 .caption {
@@ -129,11 +145,14 @@ header {
 }
 #space-station {
   width: 52.7%;
-  position: sticky;
+  position: absolute;
   top: 0%;
-  left: 48%;
-  transform: translate(0.15%, 0%);
-  border-radius: 30px;
+  left: 47.8%;
+  transform: translate(-1%, 0%);
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+  height: 100%;
 }
 #space-station-ipad,
 #space-bunny-ipad,
@@ -141,13 +160,17 @@ header {
   display: none;
 }
 #space-bunny {
-  width: 20%;
+  width: 55%;
+  max-width: 232px;
+  height: auto;
+  max-height: 300px;
   position: absolute;
   top: -20%;
   left: 65%;
   transform: translate(25%, 0%);
   animation: fluttua 7s ease-in-out infinite;
   z-index: 10;
+  display: block;
 }
 
 /* SLIDE 2 */
@@ -168,11 +191,14 @@ header {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
 #slide2-bunny {
-  width: 26.9%;
-  position: absolute;
-  top: -18%;
-  left: 65%;
+  width: 25%;
+  position: relative;
+  top: -15%;
+  left: 62%;
   transform: translate(25%, 0%);
+  display: block;
+  max-height: 120%;
+  height: 115%;
 }
 
 /* SLIDE 3*/
@@ -193,13 +219,16 @@ header {
 
 #baloon-bunny {
   /* coniglietto blu */
-  width: 26%;
+  width: 28%;
   position: absolute;
   top: -30%;
   left: 73%;
   transform: translate(25%, 0%);
   animation: fluttua 5s ease-in-out infinite;
   z-index: 1;
+  display: block;
+  max-width: 100%;
+  height: 145%;
 }
 @keyframes fluttua {
   0% {
@@ -215,10 +244,13 @@ header {
 
 #coin-bottom {
   position: absolute;
-  top: 57.4%;
+  top: 50%;
   left: 50%;
   transform: translate(-140%, 0%);
   width: 18%;
+  display: block;
+  max-width: 100%;
+  height: 50%;
 }
 #coin-top {
   position: absolute;
@@ -325,11 +357,14 @@ header {
   transform: translate(0%, -50%);
 }
 #gm-bunny {
-  width: 88%;
+  width: 90%;
   position: absolute;
   top: 50%;
-  left: 12%;
+  left: 10%;
   transform: translate(0%, -50%);
+  display: block;
+  max-width: 100%;
+  height: 120%;
 }
 
 /* SLIDE 5 */
@@ -362,7 +397,10 @@ header {
   position: absolute;
   top: 50%;
   left: 65%;
-  transform: translate(0%, -59%);
+  transform: translate(0%, -58%);
+  display: block;
+  max-width: 100%;
+  height: 120%;
 }
 
 /* BUTTONS */
@@ -376,9 +414,10 @@ header {
   font-weight: 500;
   transition: all 0.1s ease-in-out;
   text-decoration: none;
+  height: 25%;
   position: absolute;
   top: 60%;
-  left: 5%;
+  left: 60px;
   transform: translate(-25%, 10%);
   -webkit-box-shadow: 0px 2px 0px 0px #18a2ac, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 2px 0px 0px #18a2ac, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -392,9 +431,10 @@ header {
   font-weight: 500;
   transition: all 0.1s ease-in-out;
   text-decoration: none;
+  height: 25%;
   position: absolute;
   top: 60%;
-  left: 15%;
+  left: 180px;
   transform: translate(-20%, 10%);
   -webkit-box-shadow: 0px 2px 0px 0px #c9cdce, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 2px 0px 0px #c9cdce, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -453,12 +493,13 @@ header {
 .moon {
   background-color: #ebf6ff;
   width: 100%;
-  height: 88vh;
+  height: 700px;
+  position: relative;
 }
 .moon #astro-bunny {
   width: 40%;
   position: absolute;
-  top: 60%;
+  top: 5%;
   left: 50%;
   transform: translate(0%, 0%);
   animation: fluttua-b 7s ease-in-out infinite;
@@ -479,7 +520,7 @@ header {
 .head-caption {
   width: 40%;
   position: absolute;
-  top: 70%;
+  top: 10%;
   left: 10%;
   transform: translate(0%, 0%);
   z-index: 1;
@@ -533,19 +574,20 @@ header {
 }
 .round-background {
   width: 100%;
+  height: auto;
   position: absolute;
-  top: 98%;
+  top: 60%;
   left: 0%;
   transform: translate(0%, 0%);
-  z-index: 1;
+  z-index: 0;
 }
 
-@media screen and (max-width: 820px) {
+@media (max-width: 850px) {
   .elephant {
     width: 88%;
   }
   .slide {
-    height: 62%;
+    height: 100%;
   }
 
   /* SLIDE 1 ----------------- */
@@ -557,19 +599,25 @@ header {
     left: 16.1%;
     transform: translate(0%, 0%);
     display: initial;
+    max-width: 100%;
+    height: 100%;
+    display: block;
   }
   #space-station {
     display: none;
   }
   #space-bunny-ipad {
-    width: 32%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: -25%;
     left: 50%;
     transform: translate(25%, 0%);
     animation: fluttua 7s ease-in-out infinite;
     z-index: 10;
-    display: initial;
+    display: block;
+    max-width: 225px;
+    height: auto;
   }
   #space-bunny {
     display: none;
@@ -590,7 +638,9 @@ header {
     top: -8%;
     left: 61.5%;
     transform: translate(33%, 0%);
-    display: initial;
+    display: block;
+    max-width: 300px;
+    height: 108%;
   }
   #slide2-bunny {
     display: none;
@@ -608,10 +658,14 @@ header {
 
   #baloon-bunny {
     /* coniglietto blu */
-    width: 40%;
+    width: 100%;
+    height: 100%;
     top: -36%;
-    left: 63%;
+    left: 58%;
     z-index: 0;
+    display: block;
+    max-width: 300px;
+    height: auto;
   }
   #star1 {
     top: 70%;
@@ -643,9 +697,12 @@ header {
   }
   #gm-bunny {
     width: 120%;
-    top: 56%;
-    left: -20%;
+    top: 55%;
+    left: -0%;
     transform: translate(0%, -50%);
+    display: block;
+    max-width: 100%;
+    height: 108%;
   }
 
   /* SLIDE 5 ----------------------- */
@@ -666,16 +723,16 @@ header {
   .moon {
     background-color: #ebf6ff;
     width: 100%;
-    height: 14vh;
+    z-index: 0;
   }
   .moon #astro-bunny {
     width: 32%;
-    top: 37%;
+    top: 28%;
     left: 65%;
   }
   .head-caption {
     width: 88%;
-    top: 25%;
+    top: 5%;
     left: 5%;
   }
   .head-caption h1 {
@@ -684,7 +741,7 @@ header {
   .round-background {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 72%;
     left: 0%;
     transform: translate(0%, 0%);
     z-index: 1;
@@ -693,18 +750,20 @@ header {
   /* BUTTONS -------------------- */
 
   .head-btn {
+    position: absolute;
     top: 60%;
-    left: 8%;
+    left: 50px;
     transform: translate(-25%, 10%);
   }
   .head-btn2 {
+    position: absolute;
     top: 60%;
-    left: 23%;
+    left: 160px;
     transform: translate(-20%, 10%);
   }
   .indicators {
     position: absolute;
-    top: 20%;
+    top: 75%;
     left: 43%;
     transform: translate(0%, 0%);
   }
