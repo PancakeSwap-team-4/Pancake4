@@ -1,4 +1,5 @@
 .trade {
+    width: 100%;
     height: 35.875rem;
     display: flex;
     align-items: center;
@@ -7,12 +8,12 @@
 
 .tradeTextCont {
     display: flex;
-    width: 57.5rem;
+    width: 100%;
     height: 26.875rem;
 }
 
 .tradeTextCont > div {
-    height: 26.875rem;
+    height: 100%;
     width: 30.75rem;
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@
 
 .tradeLeftSection {
     height: 14.5rem;
-    width: 26.75rem;
+    width: 100%;
     margin-right: 4rem;
 }
 
@@ -32,7 +33,7 @@
 .tradeTitle{
     color: var(--h2-light-color);
     height: 5.5rem;
-    width: 26.75rem;
+    width: 100%;
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
     font-weight: 600;
@@ -145,7 +146,7 @@
 @media screen and (max-width: 850px) {
     .trade {
         height: 33.2rem;
-        width: 53.125rem;
+        width: 100%;
     }
 
     .tradeCont {
@@ -155,12 +156,13 @@
 
     .tardeContainer {
         height: 27.2rem;
+        width: 100%;
         padding: 2rem 1.5rem;
         margin: 0px;
     }
 
     .tradeTextCont {
-        width: 50.125rem;
+        width: 100%;
         height: 23.2rem;
         display: flex;
         flex-direction: column-reverse;
@@ -172,14 +174,15 @@
         flex-direction: column;
         flex: 1 1 0%;
         align-self: flex-start;
-        width: 38.43rem;
+        width: 100%;
         height: 9.7rem;
     }
 
     .tradeTitle {
         font-size: 2rem;
-        width: 38.43rem;
+        width: 100%;
         height: 2.2rem;
+        padding-bottom: 50px;
     }
 
     .tradeLeftSection p {
@@ -194,7 +197,7 @@
 
     .tradeImgCont {
         height: 12rem;
-        width: 12rem;
+        width: 100%;
         margin-bottom: 24px;
         flex-direction: row-reverse;
     }
@@ -214,30 +217,30 @@
 @media screen and (max-width: 420px) {
     .trade {
         height: 34.89rem;
-        width: auto;
+        width: 100%;
     }
 
     .tradeCont {
         height: 34.9rem;
         padding: 3rem 0; 
-        width: 24.25rem;
+        width: 100%;
     }
 
     .tardeContainer {
-        height: 29.9rem;
+        height: 100%;
         padding: 1.5rem 1rem;
         margin: 0px;
-        width: auto;
+        width: 100%;
     }
 
     .tradeTextCont {
         height: 26.9rem;
-        width: 23.25rem;
+        width: 100%;
        
     }
 
     .tradeTextCont div {
-        width: auto;
+        width: 100%;
     }
 
     .tradeLeftSection {
@@ -247,7 +250,8 @@
 
     .tradeTitle {
         height: 4.4rem;
-        width: auto;
+        padding-bottom: 120px;
+        width: 100%;
     }
 
     .tradeLeftSection p {

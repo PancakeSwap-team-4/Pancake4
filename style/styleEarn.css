@@ -20,7 +20,7 @@
 }
 
 .earnContainer {
-    width: 57.5rem;
+    width: 100%;
     height: 36.625rem;
     margin: 3rem auto
 
@@ -28,9 +28,10 @@
 
 .earnTextCont {
     display: flex;
-    width: 57.5rem;
+    width: 100%;
     height: 26.875rem;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .earnTextCont > div {
@@ -273,7 +274,7 @@
 
     .earn {
         height: 42.95rem;
-        width: fit-content;
+        width: 100%;
     }
 
     .earnCont {
@@ -287,7 +288,7 @@
     }
 
     .earnTextCont {
-        width: 50.125rem;
+        width: 100%;
         height: 23.2rem;
         display: flex;
         flex-direction: column-reverse;
@@ -299,7 +300,7 @@
         flex-direction: column;
         flex: 1 1 0%;
         align-self: flex-start;
-        width: 38.43rem;
+        width: 100%;
         height: 9.7rem;
         margin: 0px;
     }
@@ -308,7 +309,7 @@
         font-size: 2rem;
         font-weight: 600;
         line-height: 1.1;
-        width: 38.43rem;
+        width: 100%;
         height: 2.2rem;
     }
 
@@ -322,7 +323,7 @@
 
     .earnTextCont div {
         height: 9.7rem;
-        width: 30.15rem;
+        width: 100%;
     }
 
     .earnLink {
@@ -331,7 +332,7 @@
 
     .earnImgCont {
         height: 12rem;
-        width: 12rem;
+        width: 100%;
         margin-bottom: 24px;
         flex-direction: row-reverse;
     }
@@ -352,9 +353,17 @@
 
     .poolsFarm {
         margin: 1.5rem;
-        width: 50.125rem;
+        width: 100%;
         margin-left: 0px;
     }
+
+    .topCont .topFarm {
+        width: 100%;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
     .topTitle {
         font-size: 1.25rem;
         font-weight: 600;
@@ -390,50 +399,50 @@
     
     .earn {
         height: 54.65rem;
-        width: auto;
+        width: 100%;
     }
 
     .earnCont {
-        height: 34.9rem;
+        height:100%;
         padding: 3rem 0; 
-        width: auto;
+        width: 100%;
     }
 
     .earnContainer {
         height: 29.9rem;
         padding: 1.5rem 1rem;
         margin: 0px;
-        width: auto;
+        width: 100%;
     }
 
     .earnTextCont {
         height: 26.9rem;
-        width: 23.25rem;
+        width: 100%;
     }
 
     .earnTextCont div {
-        width: auto;
+        width: 100%;
     }
 
 
     .earnLeftSection {
         height: 13.4rem;
-        width: 23.25rem;
+        width: 100%;
     }
 
     .earnTitle {
         height: 4.4rem;
-        width: 22.25rem;
+        width: 100%;
     }
 
     .earnLeftSection p {
         height: 3rem;
-        width: 23.25rem;
+        width: 100%;
     }
 
     .earnLink {
         height: 3rem;
-        width: auto;
+        width: 100%;
     }
 
     .earnImgCont {
@@ -458,9 +467,9 @@
     }
 
     .poolsFarm {
-        margin-top: 2rem;
-        width: 23.25rem;
-        height: 18.25rem;
+        padding-top: 50px;
+        width: 100%;
+        height: 100%;
         margin-left: 0px;
     }
 
@@ -470,9 +479,12 @@
 
     .topCont {
         height: 15rem;
+        width: 100%;
     }
 
     .topFarm {
-        grid-template-columns: repeat(2, auto);
+        display: flex;
+        flex-wrap: wrap;
     }
-}
+
+    }

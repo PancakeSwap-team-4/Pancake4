@@ -1,5 +1,5 @@
 .cake {
-    height: 46.829rem;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .cakeContainer {
-    width: 57.5rem;
+    width: 100%;
     height: 34.829rem;
     margin: 3rem auto
 
@@ -21,8 +21,9 @@
 
 .cakeTextCont {
     display: flex;
-    width: 57.5rem;
+    width: 100%;
     height: 26.875rem;
+    justify-content: center;
 }
 
 .cakeTextCont > div {
@@ -163,6 +164,11 @@
     height: inherit;
 }
 
+.countArea {
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes imgBottom {
 	0% {
 		transform: translate(0, 0) ;
@@ -199,7 +205,7 @@
     grid-template-areas:
         "a b c"
         "d e f";
-    gap: 2rem;
+    gap: 32px;
     grid-template-columns: repeat(3, auto);
 }
 
@@ -253,8 +259,12 @@
     
 @media screen and (max-width: 850px) {
     .cake {
-        width: 53.125rem;
+        width: 100%;
         height: fit-content;
+    }
+
+    .cakeCont {
+        width: 100%;
     }
 
     .cakeContainer{
@@ -264,7 +274,7 @@
     }
 
     .cakeTextCont {
-        width: 50.125rem;
+        width: 100%;
         height: 24.7rem;
         display: flex;
         flex-direction: column-reverse;
@@ -276,13 +286,14 @@
         flex-direction: column;
         flex: 1 1 0%;
         align-self: flex-start;
-        width: 38.43rem;
+        width: 100%;
         height: 9.7rem;
+        gap: 20px;
     }
 
     .cakeTitle {
         font-size: 2rem;
-        width: 38.43rem;
+        width: 100%;
         height: 2.2rem;
     }
 
@@ -300,7 +311,7 @@
 
     .cakeImgCont {
         height: 12rem;
-        width: 12rem;
+        width: 100%;
         margin-bottom: 24px;
         flex-direction: row-reverse;
     }
@@ -316,7 +327,11 @@
     }
 
     .countArea {
-        margin-top: 1.5rem;
+        padding-top: 70px;
+    }
+
+    .cakeTextCont > div {
+        width: 100%;
     }
 
     .countSection {
@@ -343,46 +358,47 @@
 @media screen and (max-width: 420px) {
     
     .cake {
-        height: 49.35rem;
-        width: auto;
+        height: 100%;
+        width: 100%;
     }
 
     .cakeCont {
-        height: 49.35rem;
+        height: 100%;
         padding: 3rem 0; 
-        width: auto;
+        width: 100%;
     }
 
     .cakeContainer {
-        height: 49.35rem;
+        height: 100%;
         padding: 1.5rem 1rem;
         margin: 0px;
-        width: auto;
+        width: 100%;
     }
 
     .cakeTextCont {
         height: 28.4rem;
-        width: 23.25rem;
+        width: 100%;
     }
 
     .cakeTextCont div {
-        width: auto;
+        width: 100%;
     }
 
 
     .cakeLeftSection {
         height: 14.9rem;
-        width: 23.25rem;
+        width: 100%;
     }
 
     .cakeTitle {
         height: 4.4rem;
-        width: 22.25rem;
+        width: 100%;
     }
 
     .cakeLeftSection p {
+        padding-top: 40px;
         height: 4.5rem;
-        width: 23.25rem;
+        width: 100%;
     }
 
     .cakeLink {
@@ -409,14 +425,18 @@
 
     .cakeButtonLink {
         height: 3rem;
-        margin-bottom: 1.5rem;
+        padding-bottom: 20px;
+        padding-top: 80px;
     }
     .countArea {
         margin-top: 1.5rem;
-        height: 11.45rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .countSection {
+        padding-top: 70px;
         gap: 16px;
         grid-template-columns: repeat(2, auto);
         grid-template-areas:
