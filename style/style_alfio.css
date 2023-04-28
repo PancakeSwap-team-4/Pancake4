@@ -102,7 +102,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 1000 !important;
     padding: 4rem;
     overflow: hidden;
 }
