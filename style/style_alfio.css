@@ -295,6 +295,13 @@
         gap: 1rem;
     }
 
+    .win-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
     .win-card-container {
         display: flex;
         flex-direction: column;
@@ -302,6 +309,15 @@
         justify-content: center;
         gap: 1rem;
         margin-top: 2.5rem;
+    }
+
+    .win-card-right, .win-card-left {
+        transform: rotate(0deg);
+    }
+
+    .img-container > .img-top-right, .img-container > .img-bottom-left{
+        max-width: 12rem !important;
+        max-height: 12rem !important;
     }
 
 }
