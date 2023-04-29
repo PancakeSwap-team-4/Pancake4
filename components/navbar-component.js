@@ -18,6 +18,18 @@ const win = document.querySelector(".win");
 const winH2 = document.querySelector(".win > h2:first-child");
 const winButton = document.querySelectorAll(".win-button");
 const svgButton = document.querySelectorAll(".win-button > svg");
+const tradeBackground = document.querySelector(".trade");
+const tradeTitle = document.querySelector(".tradeTitle");
+const earnLine = document.querySelector(".earnLine");
+const earnCont = document.querySelector(".earnCont");
+const earnTitle = document.querySelector(".earnTitle");
+const farmsTitle = document.querySelector(".top-title-main");
+const farmsValue = document.querySelectorAll(".value");
+const cakeCont = document.querySelector(".cakeCont");
+const cakeTitle = document.querySelector(".cakeTitle");
+const cakeValue = document.querySelectorAll(".countvalue");
+const goTopButton = document.querySelector(".up-button");
+const goTopArrow = document.querySelector(".arrow-top");
 
 function toggleDark() {
   navBarDesktop.classList.toggle("dark-mode");
@@ -59,6 +71,21 @@ function toggleDark() {
   svgButton.forEach((item) => {
     item.classList.toggle("dark-svg-win");
   });
+  tradeBackground.classList.toggle("dark-trade-background");
+  tradeTitle.classList.toggle("dark-trade-text");
+  earnLine.classList.toggle("dark-trade-background-line");
+  earnCont.classList.toggle("dark-earn-background");
+  earnTitle.classList.toggle("dark-earn-text");
+  farmsTitle.classList.toggle("dark-earn-text");
+  farmsValue.forEach((value) => {
+    value.classList.toggle("dark-earn-text");
+  });
+  cakeCont.classList.toggle("dark-cake-background");
+  cakeTitle.classList.toggle("dark-cake-text");
+  cakeValue.forEach((value) => {
+    value.classList.toggle("dark-cake-text");
+  });
+  goTopArrow.classList.toggle("go-top-dark")
 }
 
 function toggleSettings() {
@@ -76,17 +103,42 @@ window.onclick = function (event) {
   }
 };
 
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    goTopButton.style.display = "block";
+  } else {
+    goTopButton.style.display = "none";
+  }
+}
+
 const banner = document.querySelector(".security-banner");
 const nav = document.querySelector("nav");
+const navMobile = document.querySelector(".navbar-mobile")
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     nav.classList.add("nav-hidden");
     banner.classList.add("security-hidden");
+    navMobile.classList.add("nav-hidden")
   } else {
     nav.classList.remove("nav-hidden");
     banner.classList.remove("security-hidden");
+    navMobile.classList.remove("nav-hidden")
   }
 
   lastScrollY = window.scrollY;
+});
+
+goTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });

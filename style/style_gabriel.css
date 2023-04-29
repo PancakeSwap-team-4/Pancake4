@@ -7,6 +7,37 @@
   box-sizing: border-box;
 }
 
+.up-button .arrow-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-top-dark {
+  fill: #000 !important;
+}
+
+.up-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--button-color);
+  position: fixed;
+  bottom: 4rem;
+  margin-left: 100%;
+  right: 5%;
+  border-radius: 15px;
+  padding: 0.7rem;
+  box-shadow: 0px 2px 0px 0px rgba(14, 14, 44, 0.4);
+  z-index: 2000;
+  display: none;
+  outline: none;
+  border: none;
+}
+
+.up-button > svg {
+  fill: white;
+}
+
 .security-banner {
   overflow: hidden;
   position: fixed;

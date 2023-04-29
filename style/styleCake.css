@@ -256,6 +256,14 @@
 .f {
     grid-area: f;
 }
+
+.dark-cake-background {
+    background-color: #08060b;
+}
+
+.dark-cake-text {
+    color: #fff !important;
+}
     
 @media screen and (max-width: 850px) {
     .cake {

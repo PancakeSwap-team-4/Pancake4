@@ -143,6 +143,18 @@
     text-decoration: underline;
 }
 
+.dark-trade-background {
+    background-color: #08060b;
+}
+
+.dark-trade-text {
+    color: #f4eeff;
+}
+
+.dark-trade-background-line {
+    background: linear-gradient(to top left, #3B3C51 50%, #08060b 50%) !important;
+}
+
 @media screen and (max-width: 850px) {
     .trade {
         height: 33.2rem;
