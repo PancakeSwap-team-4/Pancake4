@@ -72,53 +72,59 @@ footer {
   display: flex;
   width: 100%;
 }
+/* --------------------------- BUY CAKE ---------------------*/
 
-#language {
-  background: none;
-  fill: rgb(103, 88, 101);
-  border: none;
-  cursor: pointer;
-}
 .box-buy-cake {
   display: flex;
   width: 50%;
   position: absolute;
-  top: 40%;
-  left: 80%;
+  top: 65%;
+  left: 74%;
   transform: translate(0%, 0%);
 }
 
 .buy {
   fill: rgb(255, 255, 255);
 }
-
+.buy:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
 .button-buy {
   display: flex;
-  padding: 10px;
-  background-color: #52e6e1;
+  padding: 6px 22px;
+  background-color: var(--button-color);
   border-radius: 16px;
   border: 1px;
   height: 85%;
   align-items: center;
-  flex-wrap: wrap;
-  font-size: 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 .money {
   color: #927eba;
   font-weight: 600;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
-.button-buy a {
-  font-weight: 600;
-  color: rgb(255, 255, 255);
+.money p{
+  margin-top: 6px;
+  margin-left: 5px;
 }
-
-a {
+.money svg:hover{
+  transform: scale(1.2);
+  transition:  ease 0.3s;
+}
+footer a {
   text-decoration: none;
 }
-a:hover {
+footer a:hover {
   text-decoration: underline white;
 }
-
+/* ------------------------------ SWITCH BUTTON --------------------- */
 .switch {
   position: relative;
   display: inline-block;
@@ -127,6 +133,7 @@ a:hover {
   margin-right: 10px;
   background-color: antiquewhite;
   border-radius: 40px;
+  margin-top: 20px;
 }
 
 .switch input {
@@ -175,4 +182,54 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* ------------------- LANGUAGE ------------------------------------_*/
+
+.language-selector {
+  display: flex;
+  position: absolute;
+  top: 63%;
+  left: 18%;
+}
+.language-start{
+  margin: 12px;
+  display: flex;
+}
+.language-start:hover {
+  opacity: 0.8;
+}
+.language-selector p{
+  color: rgb(218, 204, 217);
+  margin-left: 6px;
+}
+.language-menu {
+  height: 420px;
+  width: 200px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: -850%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: rgb(40, 42, 42);
+  overflow-y: scroll;
+}
+
+.language-menu li a {
+  display: block;
+  padding: 5px;
+  color: rgb(218, 204, 217);
+  text-decoration: none;
+}
+.language-menu li a:hover{
+  opacity: 0.7;
+}
+.language-selector:hover .language-menu {
+  display: block;
+}
+.language-selector svg {
+  fill: rgb(218, 204, 217);
 }
