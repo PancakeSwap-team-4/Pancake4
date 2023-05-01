@@ -39,6 +39,9 @@ footer {
 .text-special {
   color: #ffb237;
 }
+.text-special:hover{
+  text-decoration: underline #ffb237;
+}
 
 .text-normal {
   color: white;
@@ -129,10 +132,10 @@ footer a:hover {
   position: relative;
   top: 35%;
   display: inline-block;
-  width: 55px;
-  height: 30px;
+  width: 62px;
+  height: 35px;
   margin-right: 10px;
-  background-color: rgb(139, 135, 139, 0.6);
+  background-color: rgba(167, 159, 167, 0.8);
   border-radius: 40px;
   margin-top: 20px;
 }
@@ -155,26 +158,45 @@ footer a:hover {
   border-radius: 20px;
   background-image: url("/media/sole.svg"), url("/media/luna.svg");
   background-repeat: no-repeat;
-  background-position: 4px center, right center;
+  background-position: 8px 8px, 35px 8px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 25px;
-  width: 25px;
-  left: 2px;
+  height: 30px;
+  width: 30px;
+  left: 3px;
   bottom: 2px;
   background-color: white;
   -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: 0.1s;
   border-radius: 50%;
+  background-color: rgb(40, 39, 39);
+  background-image: url(/media/sole2.svg);
+  background-repeat: no-repeat;
+  background-position: 4.4px center;
+}
+.slider:hover:before{
+  transition: none;
+  border: #8051d6 3px solid;
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  bottom: 0px;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(22px);
   -ms-transform: translateX(22px);
   transform: translateX(25px);
+  background-image: url(/media/luna2.svg);
+  background-repeat: no-repeat;
+  background-position: 6px 5px;
+  border: #8051d6 2.5px solid;
+  transition: 0.1s;
+  left: 3px;
+  bottom: 0px;
 }
 
 .slider.round {
