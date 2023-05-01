@@ -1,0 +1,281 @@
+@import url("root.css");
+
+/*   FOOTER  ------------------------------------------- */
+
+footer {
+  background-color: rgb(40, 39, 39);
+  width: 100%;
+  height: 440px;
+  position: relative;
+  max-width: 100%;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5%;
+}
+
+.footer-inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.text-footer {
+  list-style: none;
+  text-decoration: none;
+}
+.text-footer li {
+  margin: 10px;
+}
+.title {
+  color: #8051d6;
+  text-transform: uppercase;
+}
+
+.text-special {
+  color: #ffb237;
+}
+.text-special:hover{
+  text-decoration: underline #ffb237;
+}
+
+.text-normal {
+  color: white;
+}
+
+.footer-logo {
+  fill: white;
+}
+
+.footer-social {
+  display: flex;
+  width: 50%;
+  gap: 30px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#social {
+  fill: rgb(139, 130, 138);
+}
+
+/* ------------- UNDER FOOTER ------------*/
+
+.footer-theme {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.box-theme {
+  display: flex;
+  max-width: 100%;
+}
+/* --------------------------- BUY CAKE ---------------------*/
+
+.box-buy-cake {
+  display: flex;
+  position: absolute;
+  top: 87%;
+  left: calc(74% - 50px);
+  width: 140px;
+  max-width: 100%;
+}
+.money {
+  color: #927eba;
+  font-weight: 600;
+  display: flex;
+  margin-right: 12px;
+  margin-bottom: 5px;
+}
+.money p{
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.money svg:hover{
+  transform: scale(1.2);
+  transition:  ease 0.3s;
+}
+.buy {
+  fill: rgb(255, 255, 255);
+}
+.buy:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.button-buy {
+  position: relative;
+  width: 140px;
+  display: flex;
+  padding: 6px 22px;
+  background-color: var(--button-color);
+  border-radius: 16px;
+  border: 1px;
+  height: 85%;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline white;
+}
+/* ------------------------------ SWITCH BUTTON --------------------- */
+.switch {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  display: inline-block;
+  width: 62px;
+  height: 35px;
+  margin-right: 10px;
+  background-color: rgba(167, 159, 167, 0.8);
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0px;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+  background-image: url("/Pancake4/media/sole.svg"), url("/Pancake4/media/luna.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 8px, 35px 8px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.1s;
+  border-radius: 50%;
+  background-color: rgb(40, 39, 39);
+  background-image: url(/Pancake4/media/sole2.svg);
+  background-repeat: no-repeat;
+  background-position: 4.4px center;
+}
+.slider:hover:before{
+  transition: none;
+  border: #8051d6 3px solid;
+  height: 28px;
+  width: 28px;
+  left: 0px;
+  bottom: 0px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(25px);
+  background-image: url(/Pancake4/media/luna2.svg);
+  background-repeat: no-repeat;
+  background-position: 6px 5px;
+  left: 3px;
+  bottom: 2.5px;
+}
+input:checked + .slider:hover:before{
+  border: #8051d6 2.5px solid;
+  transition: 0.1s;
+  bottom: 1px;
+}
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ------------------- LANGUAGE ------------------------------------_*/
+
+.language-selector {
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 2%;
+}
+.language-start{
+  margin: 12px;
+  display: flex;
+}
+.language-start:hover {
+  opacity: 0.8;
+}
+.language-selector p{
+  color: rgb(218, 204, 217);
+  margin-left: 6px;
+  margin-top: 3px;
+}
+.language-menu {
+  height: 420px;
+  width: 200px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: -750%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: rgb(40, 42, 42);
+  overflow-y: scroll;
+}
+
+.language-menu li a {
+  display: block;
+  padding: 5px;
+  color: rgb(218, 204, 217);
+  text-decoration: none;
+}
+.language-menu li a:hover{
+  opacity: 0.7;
+}
+.language-selector:hover .language-menu {
+  display: block;
+}
+.language-selector svg {
+  fill: rgb(218, 204, 217);
+}
+
+/*----------------------------------- MEDIA QUERY --------------------------*/
+
+@media screen and (max-width: 850px) {
+  
+  .box-buy-cake {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: right;
+  }
+  .money p{
+    margin-top: 8px;
+  }
+}
