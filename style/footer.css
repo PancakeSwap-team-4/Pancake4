@@ -161,7 +161,7 @@ footer a:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 20px;
-  background-image: url("/Pancake4/media/sole.svg"), url("/Pancake4/media/luna.svg");
+  background-image: url("/media/sole.svg"), url("/media/luna.svg");
   background-repeat: no-repeat;
   background-position: 8px 8px, 35px 8px;
 }
@@ -178,7 +178,7 @@ footer a:hover {
   transition: 0.1s;
   border-radius: 50%;
   background-color: rgb(40, 39, 39);
-  background-image: url(/Pancake4/media/sole2.svg);
+  background-image: url("media/sole2.svg");
   background-repeat: no-repeat;
   background-position: 4.4px center;
 }
@@ -195,7 +195,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(22px);
   -ms-transform: translateX(22px);
   transform: translateX(25px);
-  background-image: url(/Pancake4/media/luna2.svg);
+  background-image: url("/media/luna2.svg");
   background-repeat: no-repeat;
   background-position: 6px 5px;
   left: 3px;
