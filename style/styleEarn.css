@@ -193,6 +193,7 @@
     height: 1.75rem;
     margin-bottom: 1.5rem;
     display:flex;
+    padding-left: 6%;
 }
 
 .topTitle h2 {
