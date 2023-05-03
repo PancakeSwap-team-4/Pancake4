@@ -22,6 +22,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 3%;
+  width: 100%;
 }
 
 .text-footer {
@@ -39,7 +40,7 @@ footer {
 .text-special {
   color: #ffb237;
 }
-.text-special:hover{
+.text-special:hover {
   text-decoration: underline #ffb237;
 }
 
@@ -54,7 +55,7 @@ footer {
 
 .footer-social {
   display: flex;
-  width: 50%;
+  width: 100%;
   gap: 30px;
   padding: 1rem;
   margin-top: 1rem;
@@ -70,7 +71,7 @@ footer {
 .footer-theme {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
 }
 
 .box-theme {
@@ -82,9 +83,9 @@ footer {
 
 .box-buy-cake {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: start;
   margin-top: 3%;
+
 }
 .money {
   color: #927eba;
@@ -93,19 +94,19 @@ footer {
   margin-right: 12px;
   margin-bottom: 5px;
 }
-.money p{
+.money p {
   margin-top: 3px;
   margin-left: 5px;
 }
-.money svg:hover{
+.money svg:hover {
   transform: scale(1.2);
-  transition:  ease 0.3s;
+  transition: ease 0.3s;
 }
 .buy {
   fill: rgb(255, 255, 255);
   width: 100%;
 }
-.buy:hover{
+.buy:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -182,7 +183,7 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: 4.4px center;
 }
-.slider:hover:before{
+.slider:hover:before {
   transition: none;
   border: #8051d6 3px solid;
   height: 28px;
@@ -201,7 +202,7 @@ input:checked + .slider:before {
   left: 3px;
   bottom: 2.5px;
 }
-input:checked + .slider:hover:before{
+input:checked + .slider:hover:before {
   border: #8051d6 2.5px solid;
   transition: 0.1s;
   bottom: 1px;
@@ -222,17 +223,17 @@ input:checked + .slider:hover:before{
   margin-top: 25px;
   margin-left: 24px;
 }
-.language-start{
+.language-start {
   margin: 12px;
   display: flex;
 }
-.language-start p{
+.language-start p {
   margin-top: 20px;
 }
 .language-start:hover {
   opacity: 0.8;
 }
-.language-selector p{
+.language-selector p {
   color: rgb(218, 204, 217);
   margin-left: 6px;
   margin-top: 0px;
@@ -258,7 +259,7 @@ input:checked + .slider:hover:before{
   color: rgb(218, 204, 217);
   text-decoration: none;
 }
-.language-menu li a:hover{
+.language-menu li a:hover {
   opacity: 0.7;
 }
 .language-selector:hover .language-menu {
@@ -268,28 +269,41 @@ input:checked + .slider:hover:before{
   fill: rgb(218, 204, 217);
 }
 
-.footer-them-query{
-  display: none;
-}
 /*----------------------------------- MEDIA QUERY --------------------------*/
 
 @media screen and (max-width: 850px) {
-  footer{
+  footer {
     height: 100%;
   }
-  .money p{
-    margin-top: 8px;
+  .money {
+    margin-top: 5px;
+  }
+  .money p {
+    margin-top: 0px;
   }
   .box-buy-cake {
-    margin-top: 5%;
+    margin-top: 8%;
+  }
+  .language-selector {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .language-selector p{
+    margin-top: 8px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .box-buy-cake {
+    padding-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 391px){
+@media screen and (max-width: 391px) {
   .footer-inside {
     flex-direction: column-reverse;
   }
-  .footer-logo{
+  .footer-logo {
     border-bottom: 0.5px solid rgb(153, 139, 139);
     padding: 1rem;
   }
@@ -301,17 +315,14 @@ input:checked + .slider:hover:before{
     font-size: 10px;
     margin-top: 20px;
   }
-  .footer-social{
+  .footer-social {
     width: 100%;
     padding-bottom: 2rem;
   }
-  .money{
+  .money {
     margin-top: 8%;
   }
   .language-selector {
-    display: flex;
-    width: 100%;
-    margin-top: 25px;
     margin-left: 5px;
   }
 }
