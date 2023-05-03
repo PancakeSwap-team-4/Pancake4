@@ -184,15 +184,29 @@
 }
 
 .poolsFarm {
+    display: flex;
+    flex-direction: column;
     height: 8.25rem;
-    width: 100%;
     margin-top: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 1rem;
 }
 
 .topTitle {
     height: 1.75rem;
     margin-bottom: 1.5rem;
     display:flex;
+}
+
+.topCont {
+    width: 100%;
+}
+
+.topFarm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .topTitle h2 {
@@ -223,7 +237,6 @@
 
 .topFarm, .topSyrup {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .topSyrup {
