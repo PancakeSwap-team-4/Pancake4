@@ -11,6 +11,17 @@ header {
   width: 100%;
   padding-top: 12%;
 }
+
+/* DARK MODE------------*/
+.header-dark{
+  background-color: rgb(25, 19, 37) !important;
+}
+.round-background-dark{
+  display: none !important;
+}
+.round-background-dark-true{
+  display: block !important;
+}
 .elephant {
   width: 78%;
   height: 26.8vh; /*FIRST OVERFLOW*/
@@ -164,7 +175,7 @@ header {
   left: 65%;
   transform: translate(25%, 0%);
   animation: fluttua 7s ease-in-out infinite;
-  z-index: 10;
+  z-index: 1;
   display: block;
 }
 
@@ -489,6 +500,12 @@ header {
   background-color: #ebf6ff;
   width: 100%;
 }
+.moon-dark{
+  background-color: rgb(25, 19, 37);
+}
+.head-caption-dark{
+  color: white !important;
+}
 .align-bunny{
   width: 100%;
   display: flex;
@@ -498,7 +515,7 @@ header {
   width: 40%;
   display: flex;
   align-items: right;
-  margin-right: 50px;
+  margin-right: 120px;
   margin-top: 50px;
   animation: fluttua-b 7s ease-in-out infinite;
   z-index: 2;
@@ -575,6 +592,13 @@ header {
   display: flex;
   align-items: flex-end;
 }
+.round-background > svg:nth-child(2){
+  display: none;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  align-items: flex-end;
+}
 
 @media (max-width: 850px) {
   .elephant {
@@ -610,7 +634,7 @@ header {
     animation: fluttua 7s ease-in-out infinite;
     z-index: 11;
     display: block;
-    max-width: 190px;
+    max-width: 215px;
     height: auto;
   }
   #space-bunny {
@@ -658,7 +682,7 @@ header {
     left: 58%;
     z-index: 0;
     display: block;
-    max-width: 250px;
+    max-width: 285px;
     height: auto;
   }
   #star1 {
@@ -719,10 +743,10 @@ header {
     width: 100%;
     z-index: 0;
   }
+
   .moon #astro-bunny {
     width: 32%;
-    top: 28%;
-    left: 65%;
+    margin-right: 20px;
   }
   .head-caption {
     width: 88%;
@@ -746,5 +770,13 @@ header {
     top: 60%;
     left: 160px;
     transform: translate(-20%, 10%);
+  }
+  .head-btns {
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+  }
+  .moon-btn{
+    margin-bottom: 12px;
   }
 }

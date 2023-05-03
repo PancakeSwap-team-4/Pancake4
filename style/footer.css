@@ -239,7 +239,7 @@ input:checked + .slider:hover:before{
   text-align: center;
   display: none;
   position: absolute;
-  top: -750%;
+  top: -690%;
   left: 0;
   padding: 0;
   margin: 0;

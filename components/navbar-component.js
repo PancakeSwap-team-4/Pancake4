@@ -30,6 +30,17 @@ const cakeTitle = document.querySelector(".cakeTitle");
 const cakeValue = document.querySelectorAll(".countvalue");
 const goTopButton = document.querySelector(".up-button");
 const goTopArrow = document.querySelector(".arrow-top");
+const header = document.querySelector("header");
+const moon = document.querySelector(".moon");
+const roundBackground = document.querySelector(
+  ".round-background > svg:nth-child(1)"
+);
+const roundBackground2 = document.querySelector(
+  ".round-background > svg:nth-child(2)"
+);
+const headBtn = document.querySelector(".head-btn");
+const moonBtn = document.querySelector(".moon-btn");
+const headCaption = document.querySelector(".head-caption > h3");
 
 function toggleDark() {
   navBarDesktop.classList.toggle("dark-mode");
@@ -85,7 +96,16 @@ function toggleDark() {
   cakeValue.forEach((value) => {
     value.classList.toggle("dark-cake-text");
   });
-  goTopArrow.classList.toggle("go-top-dark")
+  goTopArrow.classList.toggle("go-top-dark");
+
+  header.classList.toggle("header-dark");
+  moon.classList.toggle("moon-dark");
+  headBtn.classList.toggle("dark-win-button");
+  moonBtn.classList.toggle("dark-win-button");
+  headCaption.classList.toggle("head-caption-dark");
+  roundBackground.classList.toggle("round-background-dark");
+  roundBackground2.classList.toggle("round-background-dark-true");
+
 }
 
 function toggleSettings() {
@@ -120,25 +140,25 @@ function scrollFunction() {
 
 const banner = document.querySelector(".security-banner");
 const nav = document.querySelector("nav");
-const navMobile = document.querySelector(".navbar-mobile")
+const navMobile = document.querySelector(".navbar-mobile");
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     nav.classList.add("nav-hidden");
     banner.classList.add("security-hidden");
-    navMobile.classList.add("nav-hidden")
+    navMobile.classList.add("nav-hidden");
   } else {
     nav.classList.remove("nav-hidden");
     banner.classList.remove("security-hidden");
-    navMobile.classList.remove("nav-hidden")
+    navMobile.classList.remove("nav-hidden");
   }
 
   lastScrollY = window.scrollY;
 });
 
-goTopButton.addEventListener('click', () => {
+goTopButton.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 });
