@@ -26,9 +26,12 @@
       <div class="security-main">
         <div class="security-center">
           <div class="bunny-security"></div>
+          <div class="security-text">
+            <p><span class="yellow-security">Phising Warning:</span> please make sure you're visiting <span class="white-security">https://pancakeswap.finance</span> - check the URL carefully.</p>
+          </div>
         </div>
         <div class="security-close">
-
+          <button class="close-security-banner">X</button>
         </div>
       </div>
     </div>
@@ -176,7 +179,7 @@
             </div>
           </div>
           <div class="navbar-settings">
-            <button class="no-border-button">
+            <button class="no-border-button" onclick="toggleSettings()">
               <svg viewBox="0 0 24 24" height="24" width="24" color="textSubtle" xmlns="http://www.w3.org/2000/svg"
                 class="sc-231a1e38-0 gUXTeE">
                 <path fill="#7A6EAA"
@@ -428,7 +431,7 @@
           <div class="menu-title">Dark Mode</div>
           <div class="menu-buttons">
             <label class="switch">
-              <input type="checkbox" unchecked onchange="toggleDark()">
+              <input class="input-dark" type="checkbox" unchecked onchange="toggleDark()">
               <span></span>
             </label>
           </div>
@@ -1123,7 +1126,7 @@
         <div class="box-theme">
             <div class="menu-buttons">
               <label class="switch">
-                <input type="checkbox" unchecked onchange="toggleDark()">
+                <input class="input-dark-1" type="checkbox" onchange="toggleDark()">
                 <span></span>
               </label>
             </div>

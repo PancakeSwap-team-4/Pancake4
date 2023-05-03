@@ -14,7 +14,7 @@
 
 .tradeTextCont > div {
     height: 100%;
-    width: 30.75rem;
+    width: 100%;
     display: flex;
     align-items: center;
 }

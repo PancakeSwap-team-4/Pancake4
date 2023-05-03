@@ -556,7 +556,61 @@ nav {
   background-color: #353547 !important;
 }
 
+.security-main {
+  display: flex;
+  justify-content: center;
+}
+
+.security-text {
+  background: rgba(39, 38, 44, 0.4);
+  border-radius: 16px;
+  padding: 8px;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.security-center {
+  flex-grow: 1;
+}
+
+.security-banner .security-main .security-close {
+  height: 100%;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.security-close button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.security-text .yellow-security {
+  color: #ffb237;
+}
+
+.security-text p {
+  color: rgb(189, 194, 196);
+}
+
+.security-text .white-security {
+  color: #fff;
+}
+
 @media screen and (max-width: 968px) {
+  .bunny-security {
+    display: none;
+  }
+
+  .security-text {
+    width: 80%;
+  }
+
   .navbar-desktop {
     display: none;
   }
@@ -565,6 +619,7 @@ nav {
     display: block;
     height: 56px;
     width: 100%;
+    transition: transform 0.3s;
   }
 
   .navbar-mobile-main {

@@ -49,6 +49,7 @@ footer {
 
 .footer-logo {
   fill: white;
+  display: none;
 }
 
 .footer-social {

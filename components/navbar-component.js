@@ -41,6 +41,21 @@ const roundBackground2 = document.querySelector(
 const headBtn = document.querySelector(".head-btn");
 const moonBtn = document.querySelector(".moon-btn");
 const headCaption = document.querySelector(".head-caption > h3");
+const closeBanner = document.querySelector(".close-security-banner")
+const bannerContainer = document.querySelector(".security-banner")
+const navbarDesktopContainer = document.querySelector(".navbar-desktop")
+const inputDark = document.querySelector(".input-dark")
+const inputDark1 = document.querySelector(".input-dark-1") 
+const menuButton = document.querySelectorAll(".menu-button")
+
+inputDark.addEventListener("change", () => {
+  inputDark1.checked = inputDark.checked;
+})
+
+inputDark1.addEventListener("change", () => {
+  inputDark.checked = inputDark1.checked;
+})
+
 
 function toggleDark() {
   navBarDesktop.classList.toggle("dark-mode");
@@ -162,3 +177,9 @@ goTopButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+closeBanner.addEventListener("click", () => {
+  bannerContainer.classList.remove("security-banner")
+  bannerContainer.innerHTML = "";
+  navbarDesktopContainer.style.margin = 0
+})
