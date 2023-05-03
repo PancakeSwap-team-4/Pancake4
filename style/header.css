@@ -5,18 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 100%;
-  height: 100%;
-}
+
 header {
   background-color: #ecf6ff;
   width: 100%;
-  height: 50%;
-  padding-top: 15%;
+  padding-top: 12%;
 }
 .elephant {
-  position: relative;
   width: 78%;
   height: 26.8vh; /*FIRST OVERFLOW*/
   margin: 0 auto;
@@ -115,7 +110,7 @@ header {
   -webkit-text-stroke: 0.18rem rgb(101, 50, 205);
 }
 
-.purple-webkit-2{
+.purple-webkit-2 {
   font-weight: 900;
   font-size: 24px;
   background: linear-gradient(
@@ -446,7 +441,7 @@ header {
 }
 
 .indicators {
-  position: absolute;
+  position: relative;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -493,15 +488,18 @@ header {
 .moon {
   background-color: #ebf6ff;
   width: 100%;
-  height: 700px;
-  position: relative;
+}
+.align-bunny{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .moon #astro-bunny {
   width: 40%;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(0%, 0%);
+  display: flex;
+  align-items: right;
+  margin-right: 50px;
+  margin-top: 50px;
   animation: fluttua-b 7s ease-in-out infinite;
   z-index: 2;
 }
@@ -519,11 +517,9 @@ header {
 
 .head-caption {
   width: 40%;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  transform: translate(0%, 0%);
   z-index: 1;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .head-caption h1 {
@@ -575,11 +571,9 @@ header {
 .round-background {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 60%;
-  left: 0%;
-  transform: translate(0%, 0%);
   z-index: 0;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media (max-width: 850px) {
@@ -607,16 +601,16 @@ header {
     display: none;
   }
   #space-bunny-ipad {
-    width: 100%;
+    width: 70%;
     height: 100%;
     position: absolute;
     top: -25%;
     left: 50%;
     transform: translate(25%, 0%);
     animation: fluttua 7s ease-in-out infinite;
-    z-index: 10;
+    z-index: 11;
     display: block;
-    max-width: 225px;
+    max-width: 190px;
     height: auto;
   }
   #space-bunny {
@@ -664,7 +658,7 @@ header {
     left: 58%;
     z-index: 0;
     display: block;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
   }
   #star1 {
@@ -738,14 +732,6 @@ header {
   .head-caption h1 {
     font-size: 44px;
   }
-  .round-background {
-    width: 100%;
-    position: absolute;
-    top: 72%;
-    left: 0%;
-    transform: translate(0%, 0%);
-    z-index: 1;
-  }
 
   /* BUTTONS -------------------- */
 
@@ -760,11 +746,5 @@ header {
     top: 60%;
     left: 160px;
     transform: translate(-20%, 10%);
-  }
-  .indicators {
-    position: absolute;
-    top: 75%;
-    left: 43%;
-    transform: translate(0%, 0%);
   }
 }
