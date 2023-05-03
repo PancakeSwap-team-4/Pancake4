@@ -739,7 +739,6 @@ header {
   /* THE MOON -------------------- */
 
   .moon {
-    background-color: #ebf6ff;
     width: 100%;
     z-index: 0;
   }
