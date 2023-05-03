@@ -299,14 +299,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 1rem !important;
     }
 
     .win {
         padding: 2rem;
-    }
-
-    .win > h2 {
-        padding: 2rem 2rem 0 2rem;
     }
 
     .win-card-container {
@@ -326,5 +323,11 @@
         max-width: 12rem !important;
         max-height: 12rem !important;
     }
+
+    .million-cards-container > .million-card > .million-card-content > .text-description {
+         margin-top: 0; 
+    }
+
+
 
 }
