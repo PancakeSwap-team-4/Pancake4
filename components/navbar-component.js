@@ -48,6 +48,7 @@ const inputDark = document.querySelector(".input-dark");
 const inputDark1 = document.querySelector(".input-dark-1");
 const menuButton = document.querySelectorAll(".menu-button");
 const languageDropdown = document.querySelector(".language-dropdown-content");
+const navBarMobile = document.querySelector(".navbar-mobile-main");
 
 inputDark.addEventListener("change", () => {
   inputDark1.checked = inputDark.checked;
@@ -120,6 +121,7 @@ function toggleDark() {
   headCaption.classList.toggle("head-caption-dark");
   roundBackground.classList.toggle("round-background-dark");
   roundBackground2.classList.toggle("round-background-dark-true");
+  navBarMobile.classList.toggle("dark-mode")
 }
 
 if (

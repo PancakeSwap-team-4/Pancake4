@@ -838,7 +838,7 @@ nav {
 }
 
 .dark-mode {
-  background-color: #27262c;
+  background-color: #27262c !important;
   border: #27262c;
 }
 
@@ -1207,7 +1207,7 @@ nav {
     > .no-border-button {
     border: none;
     outline: none;
-    background-color: #ffffff;
+    background-color: transparent;
     cursor: pointer;
     display: flex;
     justify-content: center;
